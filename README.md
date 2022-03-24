@@ -85,7 +85,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 [Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools)
 
-- [ ] Configuring your ROS 2 environment  
+- [x] Configuring your ROS 2 environment  
 - [ ] Introducing turtlesim and rqt  
 - [ ] Understanding ROS 2 nodes  
 - [ ] Understanding ROS 2 topics  
