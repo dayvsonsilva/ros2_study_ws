@@ -2,8 +2,8 @@
 
 [Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools)
 
-[ ] Configuring your ROS 2 environment  
-[ ] Introducing turtlesim and rqt  
+- [ ] Configuring your ROS 2 environment  
+- [ ] Introducing turtlesim and rqt  
 [ ] Understanding ROS 2 nodes  
 [ ] Understanding ROS 2 topics  
 [ ] Understanding ROS 2 services  
@@ -30,7 +30,7 @@
 [ ] Creating and Using Plugins (C++)  
 
 
-[Intermediate][http://docs.ros.org/en/galactic/Tutorials.html#intermediate]
+[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
 
 [ ] Creating an action  
 [ ] Writing an action server and client (C++)  
@@ -52,7 +52,7 @@
 [ ] Recording a bag from your own node (C++)  
 [ ] Recording a bag from your own node (Python)  
 
-[Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)) 
+[Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
 
 [ ] Simulation Tutorials  
 
