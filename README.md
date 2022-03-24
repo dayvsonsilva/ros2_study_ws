@@ -99,7 +99,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 [Beginner: Client Libraries](http://docs.ros.org/en/galactic/Tutorials.html#beginner-client-libraries) 
 
-- [x] Creating a workspace  
+- [ ] Creating a workspace  
 - [ ] Creating your first ROS 2 package  
 - [ ] Writing a simple publisher and subscriber (C++)  
 - [ ] Writing a simple publisher and subscriber (Python)  
