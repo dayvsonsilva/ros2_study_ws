@@ -73,3 +73,28 @@ Repositorio Turtlesim (/ros_tutorials/tree/galactic-devel/turtlesim)
 ``` shell
 git clone https://github.com/ros/ros_tutorials.git 
 ```
+
+[Understanding ROS 2 nodes](http://docs.ros.org.ros.informatik.uni-freiburg.de/en/galactic/Tutorials/Understanding-ROS2-Nodes.html#ros2-node-list)
+
+
+"Cada node no ROS deve ser responsável por um único propósito de módulo (por exemplo, um node para controlar os motores das rodas, um node para controlar um telêmetro a laser, etc). Cada node pode enviar e receber dados para outros nodes por meio de topics, services, actions, ou parameters."
+
+Executando um node ROS2
+
+``` shell
+ros2 run <package_name> <executable_name>
+```
+
+Remap "O remapeamento permite reatribuir propriedades de nó padrão, como nome de nó, nomes de tópicos, nomes de serviço etc. "
+``` shell
+ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
+```
+
+Vizualizar informações de um node.
+``` shell
+ros2 node info /my_turtle
+```
+
+``` shell
+s
+```
