@@ -88,7 +88,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Configuring your ROS 2 environment  
 - [x] Introducing turtlesim and rqt  
 - [x] Understanding ROS 2 nodes  
-- [ ] Understanding ROS 2 topics  
+- [X] Understanding ROS 2 topics  
 - [ ] Understanding ROS 2 services  
 - [ ] Understanding ROS 2 parameters  
 - [ ] Understanding ROS 2 actions  
@@ -172,7 +172,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 
 
-### Refeências
+### Referências
 
 - [Documentação ROS Galatic](http://docs.ros.org/en/galactic/index.html)
 

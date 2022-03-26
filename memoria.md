@@ -95,6 +95,57 @@ Vizualizar informações de um node.
 ros2 node info /my_turtle
 ```
 
+
+
+
+[Understanding ROS 2 topics](http://docs.ros.org/en/galactic/Tutorials/Topics/Understanding-ROS2-Topics.html)
+
+
 ``` shell
-s
+rqt_graph
+```
+![Imagem salva a partir do rqt graph.](ros_graph.svg "rqt_graph").
+
+Listando topicos
+``` shell
+ros2 topic list
+```
+
+Listando dopicos com seus respectivos tipos
+``` shell
+ros2 topic list -t
+```
+
+Visualisar dados de uma
+``` shell
+ros2 topic echo <topic_name>
+```
+
+
+Para ter mais detalhes de um topic
+``` shell
+ros2 topic info /turtle1/cmd_vel
+```
+Saida
+```
+Type: geometry_msgs/msg/Twist
+Publisher count: 1
+Subscription count: 1
+```
+
+Topic pub
+```
+ros2 topic pub <topic_name> <msg_type> '<args>'
+```
+
+Exemplo de um topi pub (Enviar comando apenas uma vez "--once")
+```
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+```
+
+O mesmo comando pode ser modificado de "--once" para "--rate 1" para que a mensagem seja publicado no topico com uma frequencia de 1hz até que o comando seja interrompido.
+
+Para monitorar a frequencia em que um topico esta sendo publicado na rede.
+```
+ros2 topic hz /turtle1/pose
 ```
