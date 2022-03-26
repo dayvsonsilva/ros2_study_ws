@@ -90,7 +90,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Understanding ROS 2 nodes  
 - [X] Understanding ROS 2 topics  
 - [x] Understanding ROS 2 services  
-- [ ] Understanding ROS 2 parameters  
+- [x] Understanding ROS 2 parameters  
 - [ ] Understanding ROS 2 actions  
 - [ ] Using rqt_console  
 - [ ] Introducing ROS 2 launch  

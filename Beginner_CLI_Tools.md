@@ -192,3 +192,81 @@ ros2 service call /clear std_srvs/srv/Empty
 ```
 ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
 ```
+
+[Understanding ROS 2 parameters](http://docs.ros.org/en/galactic/Tutorials/Parameters/Understanding-ROS2-Parameters.html)
+
+Um parameter é um valor de configuração de um node. Você pode pensar em parameter como configurações de node. Um node pode armazenar parâmetros como inteiros, floats, booleanos, strings e listas. No ROS 2, cada nó mantém seus próprios parâmetros. Para obter mais informações sobre os parâmetros, consulte o documento conceitual. 
+
+Listar parametros dos nodes ativos
+```
+ros2 param list
+```
+
+Sintax do param get
+```
+ros2 param get <node_name> <parameter_name>
+```
+Ex
+```
+ros2 param get /turtlesim background_g
+```
+
+Sintax param set
+``` 
+ros2 param set <node_name> <parameter_name> <value>
+```
+
+Ex
+```
+ros2 param set /turtlesim background_r 150
+```
+O comando param dump salva parametros de um node em arquivos.yaml
+
+ros2 param dump sintax
+```
+ros2 param dump <node_name>
+```
+ex
+```
+ros2 param dump /turtlesim
+```
+
+Asaida do comando será um arquivo com os dados abaixo
+
+``` yaml
+/turtlesim:
+  ros__parameters:
+    background_b: 255
+    background_g: 86
+    background_r: 150
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    use_sim_time: false
+```
+
+Assim como é possivel salvar os parametros, tambem podemos carregar dados de um arquivo .yaml
+
+Sintax param load
+```
+ros2 param load <node_name> <parameter_file>
+```
+Ex
+```
+ros2 param load /turtlesim ./turtlesim.yaml
+```
+
+Tambem é possivel carregar arquivos no momento de rodar um node.
+
+Sintax
+```
+ros2 run <package_name> <executable_name> --ros-args --params-file <file_name>
+```
+Ex
+```  
+ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml
+```
