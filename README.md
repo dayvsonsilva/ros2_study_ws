@@ -89,7 +89,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Introducing turtlesim and rqt  
 - [x] Understanding ROS 2 nodes  
 - [X] Understanding ROS 2 topics  
-- [ ] Understanding ROS 2 services  
+- [x] Understanding ROS 2 services  
 - [ ] Understanding ROS 2 parameters  
 - [ ] Understanding ROS 2 actions  
 - [ ] Using rqt_console  

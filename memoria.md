@@ -149,3 +149,46 @@ Para monitorar a frequencia em que um topico esta sendo publicado na rede.
 ```
 ros2 topic hz /turtle1/pose
 ```
+
+[Understanding ROS 2 services](http://docs.ros.org/en/galactic/Tutorials/Services/Understanding-ROS2-Services.html)
+
+
+Services são outro método de comunicação para nodes no ROS graph. Os serviços são baseados em um modelo call-and-response, versus o modelo de topics’ publisher-subscriber. Enquanto os topics permitem que os nós assinem fluxos de dados e obtenham atualizações contínuas, os serviços só fornecem dados quando são especificamente chamados por um cliente. 
+
+Verificando o tipo de um determinado service
+```
+ros2 service type <service_name>
+```
+```
+ros2 service type /clear
+```
+
+Lisando os services ativos com detalhes
+```
+ros2 service list -t
+```
+
+Procurar por um service de um tipo especifico
+```
+ros2 service find <type_name>
+```
+Ex
+```
+ros2 interface show std_srvs/srv/Empty
+```
+```
+ros2 interface show turtlesim/srv/Spawn
+```
+
+Sintax Service call
+```
+ros2 service call <service_name> <service_type> <arguments>
+```
+ex
+```
+ros2 service call /clear std_srvs/srv/Empty
+```
+
+```
+ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
+```
