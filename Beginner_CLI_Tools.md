@@ -454,3 +454,33 @@ Altere o nivel de mensagem
 ```
 ros2 run turtlesim turtlesim_node --ros-args --log-level WARN
 ```
+
+
+[Introducing ROS 2 launch](http://docs.ros.org/en/galactic/Tutorials/Launch/CLI-Intro.html)
+
+"Os arquivos de inicialização permitem que você inicie e configure vários executáveis contendo nós ROS 2 simultaneamente."
+
+
+Rodar launch de exemplo
+```
+ros2 launch turtlesim multisim.launch.py
+```
+
+multisim.launch.py
+``` py
+# turtlesim/launch/multisim.launch.py
+
+from launch import LaunchDescription
+import launch_ros.actions
+
+def generate_launch_description():
+    return LaunchDescription([
+        launch_ros.actions.Node(
+            namespace= "turtlesim1", package='turtlesim', executable='turtlesim_node', output='screen'),
+        launch_ros.actions.Node(
+            namespace= "turtlesim2", package='turtlesim', executable='turtlesim_node', output='screen'),
+    ])
+```  
+
+Esse tutorial é introdutorio, na seção Intermediate o tema sera abordado com mais detalhes.
+
