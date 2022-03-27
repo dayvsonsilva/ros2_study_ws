@@ -94,7 +94,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Understanding ROS 2 actions  
 - [x] Using rqt_console  
 - [x] Introducing ROS 2 launch  
-- [ ] Recording and playing back data  
+- [x] Recording and playing back data  
 
 
 [Beginner: Client Libraries](http://docs.ros.org/en/galactic/Tutorials.html#beginner-client-libraries) 

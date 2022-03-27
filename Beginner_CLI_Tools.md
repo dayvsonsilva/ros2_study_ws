@@ -484,3 +484,43 @@ def generate_launch_description():
 
 Esse tutorial é introdutorio, na seção Intermediate o tema sera abordado com mais detalhes.
 
+
+[Recording and playing back data](http://docs.ros.org/en/galactic/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.html)
+
+"ros2 bag é uma ferramenta de linha de comando para gravar dados publicados em tópicos em seu sistema. Ele acumula os dados passados em qualquer número de tópicos e os salva em um banco de dados. Você pode então reproduzir os dados para reproduzir os resultados de seus testes e experimentos. Gravar tópicos também é uma ótima maneira de compartilhar seu trabalho e permitir que outras pessoas o recriem."
+
+
+Instalar ros2 bag
+```
+sudo apt-get install ros-galactic-ros2bag \
+                     ros-galactic-rosbag2-storage-default-plugins
+```
+
+Sintax ros2 bag
+```
+ros2 bag record <topic_name>
+```
+
+Ex (salvar dados no arquivo record)
+```
+ros2 bag record /turtle1/cmd_vel
+```
+
+Salvando mais de um topic no arquivo subset
+```
+ros2 bag record -o subset /turtle1/cmd_vel /turtle1/pose
+```
+
+Verificar informações do bag
+```
+ros2 bag info <bag_file_name>
+```
+
+Reproduzindo dados de um bag
+```
+ros2 bag play <bag_file_name>
+```
+Ex
+```
+ros2 bag play subset
+```
