@@ -418,3 +418,39 @@ Result:
 
 Goal finished with status: SUCCEEDED]
 ```
+
+
+[Using rqt_console](http://docs.ros.org/en/galactic/Tutorials/Rqt-Console/Using-Rqt-Console.html)
+
+"rqt_console é uma ferramenta GUI usada para introspectar mensagens de log no ROS 2. Normalmente, as mensagens de log aparecem em seu terminal. Com o rqt_console, você pode coletar essas mensagens ao longo do tempo, visualizá-las de perto e de forma mais organizada, filtrá-las, salvá-las e até recarregar os arquivos salvos para introspecção em um momento diferente."
+
+
+Abrir rqt_console
+```
+ros2 run rqt_console rqt_console
+```
+
+Tipos de mensagens de log disponiveis 
+```
+Fatal
+Error
+Warn
+Info
+Debug
+```
+
+"Mensagens fatais indicam que o sistema será encerrado para tentar se proteger de prejuízos.
+
+As mensagens de erro indicam problemas significativos que não necessariamente danificam o sistema, mas o impedem de funcionar corretamente.
+
+As mensagens de aviso indicam atividade inesperada ou resultados não ideais que podem representar um problema mais profundo, mas não prejudicam totalmente a funcionalidade.
+
+As mensagens de informação indicam atualizações de eventos e status que servem como uma verificação visual de que o sistema está funcionando conforme o esperado.
+
+As mensagens de depuração detalham todo o processo passo a passo da execução do sistema. "
+
+
+Altere o nivel de mensagem
+```
+ros2 run turtlesim turtlesim_node --ros-args --log-level WARN
+```
