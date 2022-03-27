@@ -77,7 +77,7 @@ ros2 run demo_nodes_py listener
 A partir da instalação do ROS2 é possível iniciar a execução dos tutoriais.
 
 
-OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e registrar informações importantes em arquivos readme.md
+OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e registrar informações importantes em arquivos Markdown.
 
 
 
@@ -91,7 +91,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [X] Understanding ROS 2 topics  
 - [x] Understanding ROS 2 services  
 - [x] Understanding ROS 2 parameters  
-- [ ] Understanding ROS 2 actions  
+- [x] Understanding ROS 2 actions  
 - [ ] Using rqt_console  
 - [ ] Introducing ROS 2 launch  
 - [ ] Recording and playing back data  
