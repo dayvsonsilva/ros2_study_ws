@@ -101,6 +101,8 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 - [x] Creating a workspace  
 - [ ] Creating your first ROS 2 package  
+  - [X] CMake
+  - [ ] Python 
 - [ ] Writing a simple publisher and subscriber (C++)  
 - [ ] Writing a simple publisher and subscriber (Python)  
 - [ ] Writing a simple service and client (C++)  

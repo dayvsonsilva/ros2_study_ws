@@ -54,31 +54,95 @@ Outros argumentos úteis para a compilação do colcon:
 
 
 Source o ambiente de rabalho(overlay)
-```
+``` shell
 source /opt/ros/galactic/setup.bash
 cd ~/ros2_study_ws
 . install/local_setup.bash
 ```
 
 Agora ao rodar o pacote turtlesim, será utilizado o pacote do ambiente ros2_study_ws(overlay)
-```
+``` shell
 ros2 run turtlesim turtlesim_node
 ```
 
 PESQUISAR DIFERENÇA ENTRE:
-```
+``` shell
 cd ~/ros2_study_ws
 . install/local_setup.bash
 ```
 E
-```
+``` shell
 cd ~/ros2_study_ws
 source install/setup.bash
 ```
 
+- [Creating your first ROS 2 package](http://docs.ros.org/en/galactic/Tutorials/Creating-Your-First-ROS2-Package.html)
+
+"1 O que é um pacote ROS 2?
+Um pacote pode ser considerado um contêiner para seu código ROS 2. Se você quiser instalar seu código ou compartilhá-lo com outras pessoas, precisará organizá-lo em um pacote. Com os pacotes, você pode liberar seu trabalho do ROS 2 e permitir que outros o construam e usem facilmente.
+
+A criação de pacotes no ROS 2 usa ament como seu sistema de compilação e colcon como sua ferramenta de compilação. Você pode criar um pacote usando CMake ou Python, que são oficialmente suportados, embora existam outros tipos de compilação. "
+
+Tutorial abordando uso do CMake
+
+Estrutura de um pacote ROS2
+my_package/
+     CMakeLists.txt
+     package.xml
+
+Onde:
+
+package.xml - arquivo contendo meta-informações sobre o pacote
+
+CMakeLists.txt - arquivo que descreve como construir o código dentro do pacote 
+
+NÂO UTILIZAR PACOTES ANINHADOS!!!!
+
+my_package_1/
+     CMakeLists.txt
+     package.xml
+     my_package_2/
+        CMakeLists.txt
+        package.xml
 
 
+Padrão de organização de pacotes
 
+workspace_folder/
+    src/
+      package_1/
+          CMakeLists.txt
+          package.xml
 
+      package_2/
+          setup.py
+          package.xml
+          resource/package_2
+      ...
+      package_n/
+          CMakeLists.txt
+          package.xml
 
+Criando um pacote CMake
+``` shell
+ros2 pkg creat -- build-type ament_cmake <package_name>
+```
 
+Utilizando o parametro  --node-name para gerar um executavel de teste
+``` shell
+ros2 pkg create --build-type ament_cmake --node-name my_node my_package
+```
+
+Após criar pacote deve ser realizado a compilação
+```
+colcon bulid
+```
+
+Executando o arquivo hello_world gerado com o parametro --node-name
+``` shell
+ros2 run my_package my_node
+```
+Retorno:
+``` shell
+CMakeLists.txt  include  package.xml  src
+```
