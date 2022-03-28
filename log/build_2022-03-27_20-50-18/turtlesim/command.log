@@ -1,0 +1,6 @@
+Invoking command in '/home/dayvson/ros2_study_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/dayvson/ros2_study_ws/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/dayvson/ros2_study_ws/install/turtlesim
+Invoked command in '/home/dayvson/ros2_study_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/dayvson/ros2_study_ws/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/dayvson/ros2_study_ws/install/turtlesim
+Invoking command in '/home/dayvson/ros2_study_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/turtlesim -- -j12 -l12
+Invoked command in '/home/dayvson/ros2_study_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/turtlesim -- -j12 -l12
+Invoking command in '/home/dayvson/ros2_study_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/dayvson/ros2_study_ws/build/turtlesim
+Invoked command in '/home/dayvson/ros2_study_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/dayvson/ros2_study_ws/build/turtlesim
