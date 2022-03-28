@@ -146,3 +146,35 @@ Retorno:
 ``` shell
 CMakeLists.txt  include  package.xml  src
 ```
+
+
+Tutorial abordando uso do Python
+
+Estrutura d epacote ROS2 em Python
+my_package/
+      setup.py
+      package.xml
+      resource/my_package
+
+package.xml - arquivo contendo meta-informações sobre o pacote.
+
+setup.py - contendo instruções de como instalar o pacote.
+
+setup.cfg -  é necessário quando um pacote tem executáveis, então ros2 run pode encontrá-los.
+
+/<package_name> - um diretório com o mesmo nome do seu pacote, usado pelas ferramentas do ROS 2 para encontrar seu pacote, contém __init__.py.
+
+Sintax do comando para criação de pacote utilizando Python
+``` shell
+ros2 pkg create --build-type ament_python <package_name>
+```
+
+``` shell
+ros2 pkg create --build-type ament_python --node-name my_node my_package_python
+```
+
+Testando o pacote
+``` shell
+ros2 run my_package_python my_node
+```
+
