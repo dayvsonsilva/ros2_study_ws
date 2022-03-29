@@ -1,0 +1,23 @@
+[3.058s] Invoking command in '/home/dayvson/ros2_study_ws/src/my_package_python': PYTHONPATH=/home/dayvson/ros2_study_ws/install/my_package_python/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package_python build --build-base /home/dayvson/ros2_study_ws/build/my_package_python/build install --prefix /home/dayvson/ros2_study_ws/install/my_package_python --record /home/dayvson/ros2_study_ws/build/my_package_python/install.log --single-version-externally-managed
+[4.077s] running egg_info
+[4.144s] writing ../../build/my_package_python/my_package_python.egg-info/PKG-INFO
+[4.182s] writing dependency_links to ../../build/my_package_python/my_package_python.egg-info/dependency_links.txt
+[4.295s] writing entry points to ../../build/my_package_python/my_package_python.egg-info/entry_points.txt
+[4.369s] writing requirements to ../../build/my_package_python/my_package_python.egg-info/requires.txt
+[4.409s] writing top-level names to ../../build/my_package_python/my_package_python.egg-info/top_level.txt
+[4.507s] reading manifest file '../../build/my_package_python/my_package_python.egg-info/SOURCES.txt'
+[4.509s] writing manifest file '../../build/my_package_python/my_package_python.egg-info/SOURCES.txt'
+[4.509s] running build
+[4.510s] running build_py
+[4.510s] running install
+[4.511s] /home/dayvson/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.511s]   warnings.warn(
+[4.521s] running install_lib
+[4.596s] running install_data
+[4.628s] running install_egg_info
+[4.695s] removing '/home/dayvson/ros2_study_ws/install/my_package_python/lib/python3.8/site-packages/my_package_python-0.0.0-py3.8.egg-info' (and everything under it)
+[4.695s] Copying ../../build/my_package_python/my_package_python.egg-info to /home/dayvson/ros2_study_ws/install/my_package_python/lib/python3.8/site-packages/my_package_python-0.0.0-py3.8.egg-info
+[4.696s] running install_scripts
+[4.870s] Installing my_node script to /home/dayvson/ros2_study_ws/install/my_package_python/lib/my_package_python
+[4.871s] writing list of installed files to '/home/dayvson/ros2_study_ws/build/my_package_python/install.log'
+[4.912s] Invoked command in '/home/dayvson/ros2_study_ws/src/my_package_python' returned '0': PYTHONPATH=/home/dayvson/ros2_study_ws/install/my_package_python/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package_python build --build-base /home/dayvson/ros2_study_ws/build/my_package_python/build install --prefix /home/dayvson/ros2_study_ws/install/my_package_python --record /home/dayvson/ros2_study_ws/build/my_package_python/install.log --single-version-externally-managed

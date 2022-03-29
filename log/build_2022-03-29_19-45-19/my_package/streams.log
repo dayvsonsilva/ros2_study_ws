@@ -1,0 +1,22 @@
+[0.058s] Invoking command in '/home/dayvson/ros2_study_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/my_package -- -j12 -l12
+[1.065s] [100%] Built target my_node
+[1.066s] Invoked command in '/home/dayvson/ros2_study_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/my_package -- -j12 -l12
+[1.128s] Invoking command in '/home/dayvson/ros2_study_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --install /home/dayvson/ros2_study_ws/build/my_package
+[1.144s] -- Install configuration: ""
+[1.145s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/lib/my_package/my_node
+[1.145s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[1.146s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[1.146s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[1.147s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[1.147s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/environment/path.sh
+[1.147s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/environment/path.dsv
+[1.148s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/local_setup.bash
+[1.148s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/local_setup.sh
+[1.149s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/local_setup.zsh
+[1.149s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/local_setup.dsv
+[1.150s] -- Installing: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/package.dsv
+[1.151s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[1.155s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[1.156s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[1.157s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/my_package/share/my_package/package.xml
+[1.158s] Invoked command in '/home/dayvson/ros2_study_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --install /home/dayvson/ros2_study_ws/build/my_package

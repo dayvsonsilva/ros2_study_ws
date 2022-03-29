@@ -1,0 +1,26 @@
+[0.056s] Invoking command in '/home/dayvson/ros2_study_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/cpp_pubsub -- -j12 -l12
+[1.039s] [35m[1mScanning dependencies of target talker[0m
+[1.040s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[5.916s] [100%] [32m[1mLinking CXX executable talker[0m
+[6.134s] [100%] Built target talker
+[6.150s] Invoked command in '/home/dayvson/ros2_study_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/cpp_pubsub -- -j12 -l12
+[6.184s] Invoking command in '/home/dayvson/ros2_study_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --install /home/dayvson/ros2_study_ws/build/cpp_pubsub
+[6.196s] -- Install configuration: ""
+[6.197s] -- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[6.199s] -- Set runtime path of "/home/dayvson/ros2_study_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[6.200s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[6.200s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[6.201s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[6.201s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[6.202s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[6.202s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[6.202s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[6.202s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[6.203s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[6.203s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[6.203s] -- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[6.203s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[6.203s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[6.203s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[6.204s] -- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[6.209s] Invoked command in '/home/dayvson/ros2_study_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --install /home/dayvson/ros2_study_ws/build/cpp_pubsub

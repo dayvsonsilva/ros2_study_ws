@@ -1,0 +1,32 @@
+[0.055s] Invoking command in '/home/dayvson/ros2_study_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/cpp_pubsub -- -j12 -l12
+[1.080s] [35m[1mScanning dependencies of target talker[0m
+[1.084s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[3.074s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:33:13:[m[K [01;31m[Kerror: [m[K‘[01m[KTImerBase[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type; did you mean ‘[01m[KTimerBase[m[K’?
+[3.074s]    33 |     rclcpp::[01;31m[KTImerBase[m[K::SharePtr timer_;
+[3.075s]       |             [01;31m[K^~~~~~~~~[m[K
+[3.075s]       |             [32m[KTimerBase[m[K
+[3.079s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:34:47:[m[K [01;31m[Kerror: [m[K‘[01m[KSharePtr[m[K’ in ‘[01m[Kclass rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >[m[K’ does not name a type
+[3.079s]    34 |     rclcpp::Publisher<std_msgs::msg::String>::[01;31m[KSharePtr[m[K publisher_;
+[3.079s]       |                                               [01;31m[K^~~~~~~~[m[K
+[3.084s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[3.084s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[3.084s]    20 |         [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("topic", 10);
+[3.084s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.084s]       |         [32m[Krcl_publisher_t[m[K
+[3.090s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[3.091s]    21 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[3.091s]       |         [01;31m[K^~~~~~[m[K
+[3.091s]       |         [32m[Ktimer_t[m[K
+[3.107s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[3.108s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kto_strig[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kto_string[m[K’?
+[3.108s]    29 |         message.data = "Hello, world! " + std::[01;31m[Kto_strig[m[K(count_++);
+[3.108s]       |                                                [01;31m[K^~~~~~~~[m[K
+[3.108s]       |                                                [32m[Kto_string[m[K
+[3.112s] [01m[K/home/dayvson/ros2_study_ws/src/cpp_pubsub/src/publisher_member_function.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[3.112s]    31 |         [01;31m[Kpublisher_[m[K->publish(message);
+[3.112s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.113s]       |         [32m[Krcl_publisher_t[m[K
+[4.395s] make[2]: *** [CMakeFiles/talker.dir/build.make:63: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[4.395s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/talker.dir/all] Error 2
+[4.396s] make: *** [Makefile:141: all] Error 2
+[4.400s] Invoked command in '/home/dayvson/ros2_study_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic /usr/bin/cmake --build /home/dayvson/ros2_study_ws/build/cpp_pubsub -- -j12 -l12

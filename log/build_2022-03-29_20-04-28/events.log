@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000813] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000918] (-) JobUnselected: {'identifier': 'my_package_python'}
+[0.001359] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.001436] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.001504] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.016602] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.017749] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.018927] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dayvson/ros2_study_ws/build/cpp_pubsub', '--', '-j12', '-l12'], 'cwd': '/home/dayvson/ros2_study_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dayvson'), ('LC_TIME', 'pt_BR.UTF-8'), ('SSH_AGENT_PID', '4364'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dayvson/ros2_study_ws/install/turtlesim/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/dayvson'), ('OLDPWD', '/home/dayvson'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '3739'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '48032'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dayvson/ros2_study_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'dayvson'), ('JOURNAL_STREAM', '8:204595'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'dayvson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/dayvson/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dayvson:@/tmp/.ICE-unix/4707,unix/dayvson:/tmp/.ICE-unix/4707'), ('INVOCATION_ID', '9ec5e66dfa1a4376bf4b2985c5bae0e0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dayvson/ros2_study_ws/install/turtlesim:/home/dayvson/ros2_study_ws/install/my_package_python:/home/dayvson/ros2_study_ws/install/my_package:/home/dayvson/ros2_study_ws/install/cpp_pubsub:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2b249fb1-90bd-49c9-89ce-c1163d1a4a0f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dayvson/ros2_study_ws/build/cpp_pubsub'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dayvson/ros2_study_ws/install/turtlesim/lib/python3.8/site-packages:/home/dayvson/ros2_study_ws/install/my_package_python/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dayvson/ros2_study_ws/install/turtlesim:/home/dayvson/ros2_study_ws/install/my_package:/home/dayvson/ros2_study_ws/install/cpp_pubsub:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic')]), 'shell': False}
+[0.098319] (-) TimerEvent: {}
+[0.199077] (-) TimerEvent: {}
+[0.299752] (-) TimerEvent: {}
+[0.400432] (-) TimerEvent: {}
+[0.501022] (-) TimerEvent: {}
+[0.601668] (-) TimerEvent: {}
+[0.702317] (-) TimerEvent: {}
+[0.802768] (-) TimerEvent: {}
+[0.903422] (-) TimerEvent: {}
+[1.004086] (-) TimerEvent: {}
+[1.104735] (-) TimerEvent: {}
+[1.205405] (-) TimerEvent: {}
+[1.306062] (-) TimerEvent: {}
+[1.346036] (cpp_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[1.393237] (cpp_pubsub) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.406181] (-) TimerEvent: {}
+[1.506592] (-) TimerEvent: {}
+[1.516730] (cpp_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[1.606726] (-) TimerEvent: {}
+[1.707263] (-) TimerEvent: {}
+[1.754750] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.768411] (cpp_pubsub) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[1.807450] (-) TimerEvent: {}
+[1.908017] (-) TimerEvent: {}
+[2.008411] (-) TimerEvent: {}
+[2.069602] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.108545] (-) TimerEvent: {}
+[2.172701] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[2.176935] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[2.208693] (-) TimerEvent: {}
+[2.210205] (cpp_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[2.308824] (-) TimerEvent: {}
+[2.409201] (-) TimerEvent: {}
+[2.459993] (cpp_pubsub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[2.509329] (-) TimerEvent: {}
+[2.587998] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.591433] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.592183] (cpp_pubsub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.592512] (cpp_pubsub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.594692] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.595088] (cpp_pubsub) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.597187] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.600394] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.600801] (cpp_pubsub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.602007] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.609497] (-) TimerEvent: {}
+[2.609879] (cpp_pubsub) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.654486] (cpp_pubsub) StdoutLine: {'line': b'-- Generating done\n'}
+[2.660235] (cpp_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/dayvson/ros2_study_ws/build/cpp_pubsub\n'}
+[2.707489] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[2.709634] (-) TimerEvent: {}
+[2.741343] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[2.777800] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[2.809770] (-) TimerEvent: {}
+[2.910217] (-) TimerEvent: {}
+[3.010608] (-) TimerEvent: {}
+[3.111030] (-) TimerEvent: {}
+[3.211499] (-) TimerEvent: {}
+[3.312084] (-) TimerEvent: {}
+[3.412478] (-) TimerEvent: {}
+[3.512899] (-) TimerEvent: {}
+[3.613401] (-) TimerEvent: {}
+[3.713912] (-) TimerEvent: {}
+[3.814363] (-) TimerEvent: {}
+[3.914872] (-) TimerEvent: {}
+[4.015361] (-) TimerEvent: {}
+[4.115869] (-) TimerEvent: {}
+[4.216280] (-) TimerEvent: {}
+[4.316768] (-) TimerEvent: {}
+[4.417216] (-) TimerEvent: {}
+[4.517644] (-) TimerEvent: {}
+[4.618065] (-) TimerEvent: {}
+[4.718501] (-) TimerEvent: {}
+[4.818947] (-) TimerEvent: {}
+[4.919419] (-) TimerEvent: {}
+[5.019870] (-) TimerEvent: {}
+[5.120262] (-) TimerEvent: {}
+[5.220764] (-) TimerEvent: {}
+[5.321291] (-) TimerEvent: {}
+[5.421847] (-) TimerEvent: {}
+[5.522300] (-) TimerEvent: {}
+[5.622729] (-) TimerEvent: {}
+[5.723210] (-) TimerEvent: {}
+[5.823684] (-) TimerEvent: {}
+[5.924148] (-) TimerEvent: {}
+[6.024557] (-) TimerEvent: {}
+[6.124987] (-) TimerEvent: {}
+[6.225411] (-) TimerEvent: {}
+[6.325843] (-) TimerEvent: {}
+[6.426271] (-) TimerEvent: {}
+[6.526775] (-) TimerEvent: {}
+[6.627305] (-) TimerEvent: {}
+[6.727806] (-) TimerEvent: {}
+[6.828257] (-) TimerEvent: {}
+[6.928737] (-) TimerEvent: {}
+[7.029335] (-) TimerEvent: {}
+[7.129820] (-) TimerEvent: {}
+[7.230253] (-) TimerEvent: {}
+[7.330704] (-) TimerEvent: {}
+[7.431188] (-) TimerEvent: {}
+[7.531804] (-) TimerEvent: {}
+[7.632283] (-) TimerEvent: {}
+[7.732805] (-) TimerEvent: {}
+[7.833437] (-) TimerEvent: {}
+[7.934355] (-) TimerEvent: {}
+[8.034855] (-) TimerEvent: {}
+[8.135315] (-) TimerEvent: {}
+[8.235788] (-) TimerEvent: {}
+[8.336286] (-) TimerEvent: {}
+[8.436765] (-) TimerEvent: {}
+[8.537256] (-) TimerEvent: {}
+[8.637719] (-) TimerEvent: {}
+[8.738154] (-) TimerEvent: {}
+[8.838622] (-) TimerEvent: {}
+[8.939071] (-) TimerEvent: {}
+[9.039507] (-) TimerEvent: {}
+[9.139979] (-) TimerEvent: {}
+[9.240432] (-) TimerEvent: {}
+[9.340828] (-) TimerEvent: {}
+[9.441291] (-) TimerEvent: {}
+[9.541748] (-) TimerEvent: {}
+[9.642211] (-) TimerEvent: {}
+[9.742660] (-) TimerEvent: {}
+[9.843120] (-) TimerEvent: {}
+[9.943570] (-) TimerEvent: {}
+[10.044065] (-) TimerEvent: {}
+[10.144538] (-) TimerEvent: {}
+[10.244981] (-) TimerEvent: {}
+[10.345496] (-) TimerEvent: {}
+[10.446028] (-) TimerEvent: {}
+[10.546503] (-) TimerEvent: {}
+[10.646907] (-) TimerEvent: {}
+[10.747350] (-) TimerEvent: {}
+[10.847810] (-) TimerEvent: {}
+[10.948263] (-) TimerEvent: {}
+[11.048720] (-) TimerEvent: {}
+[11.149251] (-) TimerEvent: {}
+[11.249797] (-) TimerEvent: {}
+[11.350359] (-) TimerEvent: {}
+[11.450761] (-) TimerEvent: {}
+[11.551199] (-) TimerEvent: {}
+[11.651700] (-) TimerEvent: {}
+[11.752152] (-) TimerEvent: {}
+[11.852570] (-) TimerEvent: {}
+[11.953089] (-) TimerEvent: {}
+[11.967704] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[12.053260] (-) TimerEvent: {}
+[12.153662] (-) TimerEvent: {}
+[12.254095] (-) TimerEvent: {}
+[12.354534] (-) TimerEvent: {}
+[12.387701] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[12.401526] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[12.447126] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[12.454838] (-) TimerEvent: {}
+[12.468528] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dayvson/ros2_study_ws/build/cpp_pubsub'], 'cwd': '/home/dayvson/ros2_study_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dayvson'), ('LC_TIME', 'pt_BR.UTF-8'), ('SSH_AGENT_PID', '4364'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dayvson/ros2_study_ws/install/turtlesim/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/dayvson'), ('OLDPWD', '/home/dayvson'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '3739'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '48032'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dayvson/ros2_study_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'dayvson'), ('JOURNAL_STREAM', '8:204595'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'dayvson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/dayvson/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dayvson:@/tmp/.ICE-unix/4707,unix/dayvson:/tmp/.ICE-unix/4707'), ('INVOCATION_ID', '9ec5e66dfa1a4376bf4b2985c5bae0e0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dayvson/ros2_study_ws/install/turtlesim:/home/dayvson/ros2_study_ws/install/my_package_python:/home/dayvson/ros2_study_ws/install/my_package:/home/dayvson/ros2_study_ws/install/cpp_pubsub:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2b249fb1-90bd-49c9-89ce-c1163d1a4a0f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dayvson/ros2_study_ws/build/cpp_pubsub'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dayvson/ros2_study_ws/install/turtlesim/lib/python3.8/site-packages:/home/dayvson/ros2_study_ws/install/my_package_python/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dayvson/ros2_study_ws/install/turtlesim:/home/dayvson/ros2_study_ws/install/my_package:/home/dayvson/ros2_study_ws/install/cpp_pubsub:/home/dayvson/ros2_study_ws/install/my_package_python:/opt/ros/galactic')]), 'shell': False}
+[12.483211] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.483856] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[12.484370] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/lib/cpp_pubsub/listener\n'}
+[12.489336] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/dayvson/ros2_study_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""\n'}
+[12.554968] (-) TimerEvent: {}
+[12.602427] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[12.603102] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[12.655102] (-) TimerEvent: {}
+[12.657714] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[12.658357] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[12.660886] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[12.661431] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[12.661923] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[12.662792] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[12.663167] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[12.663566] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[12.663831] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[12.664356] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[12.664733] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[12.665032] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[12.665244] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/dayvson/ros2_study_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[12.687769] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[12.755384] (-) TimerEvent: {}
+[12.818337] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[12.922348] (-) TimerEvent: {}
+[12.922693] (-) EventReactorShutdown: {}
