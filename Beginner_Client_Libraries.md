@@ -269,3 +269,49 @@ Retorno:
 [INFO] [minimal_subscriber]: I heard: "Hello World: 13"
 [INFO] [minimal_subscriber]: I heard: "Hello World: 14"
 ```
+
+
+[Writing a simple publisher and subscriber (Python)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
+
+
+Criando pacote ROS2 com Python
+```
+ros2 pkg create --build-type ament_python py_pubsub
+```
+
+Para o tutorial foram criados os arquivos:
+
+publisher_member_function.py
+subscriber_member_function.py
+
+Alem da criação dos nós, foram realizadas alterações nos arquivos:  
+
+setup.py
+setup.cfg 
+package.xml
+
+As alterações do arquivo package.xml diz respeito a edição de informações basicas do pacote(Descrição, nome do mantenedor e tipo de licença), e tambem nele é adicionado as dependencias do pacote. 
+
+``` xml
+<exec_depend>rclpy</exec_depend>
+<exec_depend>std_msgs</exec_depend>
+```
+
+Abra o arquivo setup.py. Novamente, combine os campos maintainer, maintainer_email, description e license identico ao package.xml: 
+
+```
+maintainer='YourName',
+maintainer_email='you@email.com',
+description='Examples of minimal publisher/subscriber using rclpy',
+license='Apache License 2.0',
+```
+
+Alem disso deve ser adidionado as seguintes linhas
+``` python
+entry_points={
+        'console_scripts': [
+                'talker = py_pubsub.publisher_member_function:main',
+                'listener = py_pubsub.subscriber_member_function:main',
+        ],
+},
+```

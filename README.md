@@ -104,7 +104,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
   - [x] CMake
   - [x] Python 
 - [x] Writing a simple publisher and subscriber (C++)  
-- [ ] Writing a simple publisher and subscriber (Python)  
+- [x] Writing a simple publisher and subscriber (Python)  
 - [ ] Writing a simple service and client (C++)  
 - [ ] Writing a simple service and client (Python)  
 - [ ] Creating custom ROS 2 msg and srv files  
