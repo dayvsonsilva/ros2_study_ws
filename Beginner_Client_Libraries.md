@@ -315,3 +315,48 @@ entry_points={
         ],
 },
 ```
+[Writing a simple service and client (C++)]()
+
+[Writing a simple service and client (Python)]() 
+
+Quando os nós se comunicam usando serviços, o nó que envia uma solicitação de dados é chamado de nó cliente e aquele que responde à solicitação é o nó de serviço. A estrutura da solicitação e resposta é determinada por um arquivo .srv.
+
+
+```
+ros2 pkg create --build-type ament_python py_srvcli --dependencies rclpy example_interfaces
+```
+
+Após a criação do pacote atualizar os arquivos package.xml e setup.py.
+
+Para o service e o client foram criados os arquivos:  
+
+service_member_function.py
+client_member_function.py
+
+
+Apos a criação dos arquivos basta rodar os dois comando abaixo em terminais diferentes
+
+```
+ros2 run py_srvcli service
+```
+
+```
+ros2 run py_srvcli client 2 3
+```
+
+O cliente passa os dados "2 e 3" para o server que retorna o resultado da soma "5"
+
+
+VERIFICAR SE È POSSIVEL UTILIZAR UM SRV DE UM PACOTE PYTHON AMENT_PYTHON.
+
+
+[Writing a simple service and client (C++)]()
+[Writing a simple service and client (Python)]()  
+[Creating custom ROS 2 msg and srv files]()  
+  - C++
+  - Python 
+[Expanding on ROS 2 interfaces]()  
+[Using parameters in a class (C++)]()  
+[Using parameters in a class (Python)]()  
+[Getting started with ros2doctor]()  
+[Creating and Using Plugins (C++)]()
