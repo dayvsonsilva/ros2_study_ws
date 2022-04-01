@@ -4,8 +4,6 @@ from example_interfaces.srv import AddTwoInts
 import rclpy
 from rclpy.node import Node
 
-from py_srvcli.srv import AddTwoints_1
-
 
 class MinimalClientAsync(Node):
 

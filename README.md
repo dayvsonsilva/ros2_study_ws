@@ -57,7 +57,6 @@ Instalando os Pacotes do ROS2
 ```
 sudo apt update
 sudo apt install ros-galactic-desktop
-sudo apt install ros-galactic-ros-base
 ```
 
 Após a instalação é recomendado realizar o teste do ROS2 através da execução dos comandos abaixo.
