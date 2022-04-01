@@ -1,3 +1,8 @@
+---
+TOCTitle: Markdown
+
+---
+
 # ros2_study
 
 ## Introdução
@@ -26,7 +31,14 @@ A documentação original aborda formatos diferentes de instalação, incluindo 
 O bloco de codigo abaixo tras um resumo com os comando para instalação do ROS 2 Galactic, para entender o passo-a-passo da instalação é sugerido que seja realizado uma visita a pagina [Installing ROS 2 via Debian Packages](http://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#installing-ros-2-via-debian-packages) 
 </div>
 
+
+```c++  
+a=2;
 ```
+
+
+
+```shell  
 # Set locale
 locale  # check for UTF-8
 
@@ -54,19 +66,19 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 ```
 
 Instalando os Pacotes do ROS2  
-```
+```shell
 sudo apt update
 sudo apt install ros-galactic-desktop
 ```
 
 Após a instalação é recomendado realizar o teste do ROS2 através da execução dos comandos abaixo.
 
-```
+```shell
 source /opt/ros/galactic/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
-```
+```shell
 source /opt/ros/galactic/setup.bash
 ros2 run demo_nodes_py listener
 ```
@@ -104,7 +116,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
   - [x] Python 
 - [x] Writing a simple publisher and subscriber (C++)  
 - [x] Writing a simple publisher and subscriber (Python)  
-- [ ] Writing a simple service and client (C++)  
+- [x] Writing a simple service and client (C++)  
 - [x] Writing a simple service and client (Python)  
 - [ ] Creating custom ROS 2 msg and srv files  
   - [ ] C++

@@ -2,10 +2,11 @@
 
 - [Creating a workspace](http://docs.ros.org/en/galactic/Tutorials/Workspace/Creating-A-Workspace.html)
   
-
+<div style="text-align: justify"> 
 "Um espaço de trabalho é um diretório que contém pacotes do ROS 2. Antes de usar o ROS 2, é necessário fornecer seu espaço de trabalho de instalação do ROS 2 no terminal em que você planeja trabalhar. Isso torna os pacotes do ROS 2 disponíveis para você usar nesse terminal.
 
 Você também tem a opção de fornecer um “overlay” – um espaço de trabalho secundário onde você pode adicionar novos pacotes sem interferir no espaço de trabalho ROS 2 existente que você está estendendo, ou “underlay”. Seu underlay deve conter as dependências de todos os pacotes em seu overlay. Os pacotes em sua sobreposição substituirão os pacotes na subjacência. Também é possível ter várias camadas de subjacências e sobreposições, com cada sobreposição sucessiva usando os pacotes de suas subjacências pai. "
+</div>
 
 Para cada novo terminal aberto deve ser definido o ambiente de execução
 ``` shell
@@ -16,9 +17,9 @@ source /opt/ros/galactic/setup.bash
 mkdir -p ~/dev_ws/src
 cd ~/dev_ws/src
 ```
-
+<div style="text-align: justify"> 
 Para o repositorio atual o ambiente de trabalho é chamado de ros2_study_ws, os pacotes utilizados no ambiente de trabalho devem estar no diretorio /src.  
-
+</div>
 Como referencia será utilizado o repositorio ros_tutorials.
 
 ``` shell
@@ -32,9 +33,9 @@ Instalando depedencias
 cd ..
 rosdep install -i --from-path src --rosdistro galactic -y
 ```
-
+<div style="text-align: justify"> 
 "Os pacotes declaram suas dependências no arquivo package.xml (você aprenderá mais sobre pacotes no próximo tutorial). Este comando percorre essas declarações e instala as que estão faltando. Você pode aprender mais sobre o rosdep em outro tutorial (em breve)."
-
+</div>
 
 Build workspace
 ``` shell
@@ -78,10 +79,12 @@ source install/setup.bash
 
 - [Creating your first ROS 2 package](http://docs.ros.org/en/galactic/Tutorials/Creating-Your-First-ROS2-Package.html)
 
+<div style="text-align: justify"> 
 "1 O que é um pacote ROS 2?
 Um pacote pode ser considerado um contêiner para seu código ROS 2. Se você quiser instalar seu código ou compartilhá-lo com outras pessoas, precisará organizá-lo em um pacote. Com os pacotes, você pode liberar seu trabalho do ROS 2 e permitir que outros o construam e usem facilmente.
 
 A criação de pacotes no ROS 2 usa ament como seu sistema de compilação e colcon como sua ferramenta de compilação. Você pode criar um pacote usando CMake ou Python, que são oficialmente suportados, embora existam outros tipos de compilação. "
+</div>
 
 Tutorial abordando uso do CMake
 
@@ -201,8 +204,10 @@ Alem da criação dos nós, foram realizadas alterações nos arquivos:
 package.xml 
 CMakeLists.txt  
  
-
+<div style="text-align: justify"> 
 As alterações do arquivo package.xml diz respeito a edição de informações basicas do pacote(Descrição, nome do mantenedor e tipo de licença), e tambem nele é adicionado as dependencias do pacote. 
+
+</div>
 
 ``` xml
 <depend>rclcpp</depend>
@@ -315,13 +320,41 @@ entry_points={
         ],
 },
 ```
-[Writing a simple service and client (C++)]()
+[Writing a simple service and client (C++)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Cpp-Service-And-Client.html)
 
-[Writing a simple service and client (Python)]() 
 
+<div style="text-align: justify"> >
 Quando os nós se comunicam usando serviços, o nó que envia uma solicitação de dados é chamado de nó cliente e aquele que responde à solicitação é o nó de serviço. A estrutura da solicitação e resposta é determinada por um arquivo .srv.
+</div>
+
+No tutorial foram criados 2 arquivos:
+
+add_two_ints_server.cpp
+add_two_ints_client.cpp
+
+Para rodar o exemplo rode os dois comandos abaixo em terminais diferentes
+```
+ros2 run cpp_srvcli server
+```
+Retorno:
+```
+[INFO] [rclcpp]: Ready to add two ints.
+```
+
+```
+ros2 run cpp_srvcli client 2 3
+
+```
+Retorno:
+```
+[INFO] [rclcpp]: Sum: 5
+```
 
 
+[Writing a simple service and client (Python)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Py-Service-And-Client.html) 
+
+
+Criando um pacote
 ```
 ros2 pkg create --build-type ament_python py_srvcli --dependencies rclpy example_interfaces
 ```
@@ -347,12 +380,13 @@ ros2 run py_srvcli client 2 3
 O cliente passa os dados "2 e 3" para o server que retorna o resultado da soma "5"
 
 
-VERIFICAR SE È POSSIVEL UTILIZAR UM SRV DE UM PACOTE PYTHON AMENT_PYTHON.
+VERIFICAR SE É POSSIVEL UTILIZAR UM SRV DE UM PACOTE PYTHON AMENT_PYTHON.
 
 
 <!--  -->
-Proximos 
-[Writing a simple service and client (C++)]()
+Proximos  
+
+[Writing a simple service and client (C++)]()  
 [Writing a simple service and client (Python)]()  
 [Creating custom ROS 2 msg and srv files]()  
   - C++
