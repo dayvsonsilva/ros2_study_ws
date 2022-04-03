@@ -119,7 +119,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Writing a simple service and client (C++)  
 - [x] Writing a simple service and client (Python)  
 - [ ] Creating custom ROS 2 msg and srv files  
-  - [ ] C++
+  - [x] C++
   - [ ] Python 
 - [ ] Expanding on ROS 2 interfaces  
 - [ ] Using parameters in a class (C++)  
