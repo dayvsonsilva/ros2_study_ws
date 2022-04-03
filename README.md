@@ -118,9 +118,9 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Writing a simple publisher and subscriber (Python)  
 - [x] Writing a simple service and client (C++)  
 - [x] Writing a simple service and client (Python)  
-- [ ] Creating custom ROS 2 msg and srv files  
+- [x] Creating custom ROS 2 msg and srv files  
   - [x] C++
-  - [ ] Python 
+  - [x] Python 
 - [ ] Expanding on ROS 2 interfaces  
 - [ ] Using parameters in a class (C++)  
 - [ ] Using parameters in a class (Python)  

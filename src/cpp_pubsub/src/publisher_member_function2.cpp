@@ -1,11 +1,7 @@
 #include <chrono>
-#include <functional>
 #include <memory>
-#include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
-
 #include "tutorial_interfaces/msg/num.hpp" // CHANGE
 
 using namespace std::chrono_literals;
@@ -17,7 +13,8 @@ public:
       : Node("minimal_publisher"), count_(0)
   {
     publisher_ = this->create_publisher<tutorial_interfaces::msg::Num>("topic", 10); // CHANGE
-    timer_ = this->create_wall_timer(500ms, std::bind(&MinimalPublisher::timer_callback, this));
+    timer_ = this->create_wall_timer(
+        500ms, std::bind(&MinimalPublisher::timer_callback, this));
   }
 
 private:

@@ -384,10 +384,9 @@ VERIFICAR SE É POSSIVEL UTILIZAR UM SRV DE UM PACOTE PYTHON AMENT_PYTHON.
 
 [Creating custom ROS 2 msg and srv files](http://docs.ros.org/en/galactic/Tutorials/Custom-ROS2-Interfaces.html)  
   
+  Etapa 1
   
-  C++
-  
-  Para a utilização de mensagem e serviços customizados foi criado um pacote especifico para acomodar os arquivos abaixo:
+  Para a utilização de mensagem e serviços customizados foi criado um pacote especifico(tutorial interfaces) para acomodar os arquivos abaixo:
 
   msg/Num.msg 
   ```
@@ -403,13 +402,55 @@ VERIFICAR SE É POSSIVEL UTILIZAR UM SRV DE UM PACOTE PYTHON AMENT_PYTHON.
   int64 sum
   ```
 
-  Para esse tutorial foram criados dois arquivos pricipais a partir do exemplo cpp_pubsub.
+Apos compilar o pacote pode o comando abaixo pode ser utilizado para verificar se a criação das mensagens funcionou com sucesso:
+
+```
+ros2 interface show tutorial_interfaces/msg/Num
+```
+Retorno:
+```
+int64 num
+```
+
+```
+ros2 interface show tutorial_interfaces/srv/AddThreeInts
+```
+Retorno:
+```
+int64 a
+int64 b
+int64 c
+---
+int64 sum
+```
+
+
+  C++
+  
+  Para esse tutorial foram criados dois arquivos pricipais a partir do exemplo cpp_pubsub para testar a msg Num.msg.
+
   publisher_member_function2.cpp
-  subscriber_member_function.cpp
+  subscriber_member_function2.cpp
   
-  
-  
+  Para o teste da msg AddThreeInts.srv foram utilizados cpp_srvcli.
+
+  add_two_ints_server2.cpp
+  add_two_ints_client2.cpp
+
+  *Alem dos arquivos criados verificar alterações nos arquivos package.xml e CMakeLists.txt 
+
   Python 
+
+  Para esse tutorial foram criados dois arquivos pricipais a partir do exemplo py_pubsub para testar a msg Num.msg.
+
+  publisher_member_function2.py
+  subscriber_member_function2.py
+  
+  Para o teste da msg AddThreeInts.srv foram utilizados py_srvcli.
+
+  add_two_ints_server2.py
+  add_two_ints_client2.py
+
 
 <!--  -->
 Proximos  
