@@ -481,6 +481,22 @@ publish_address_book.cpp(fornecido no tutorial)
 
 subscriber_address_book.cpp(criado como foi sugerido no tutorial)
 
+
+[Using parameters in a class (C++)](http://docs.ros.org/en/galactic/Tutorials/Using-Parameters-In-A-Class-CPP.html) 
+
+
+Neste turorial é abordado a utilização de parametros a partir de arquivos launch.
+
+Pacote criado para este tutorial
+``` shell
+ros2 pkg create --build-type ament_cmake cpp_parameters --dependencies rclcpp
+```
+
+Foram realizados alterações nos arquivos package.xml e CMakeLists.txt.
+
+Foram criados dois arquivos, um chamado cpp_parameters_node.cpp e cpp_parameters_launch.py, o primeiro cria um nó que carrega parametro defaul "world" e o launch carrega o executavel "cpp_parameters" porem seta como parametro  "earth".
+
+
 <!--  -->
 Proximos  
 

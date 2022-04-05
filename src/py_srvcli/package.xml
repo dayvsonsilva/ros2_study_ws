@@ -18,8 +18,8 @@
   <test_depend>python3-pytest</test_depend>
  
  
-  <exec_depend>example_interfaces</exec_depend>
-  <exec_depend>tutorial_interfaces</exec_depend>
+  <!-- <exec_depend>example_interfaces</exec_depend>
+  <exec_depend>tutorial_interfaces</exec_depend> -->
 
 
   <export>

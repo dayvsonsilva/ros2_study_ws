@@ -122,7 +122,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
   - [x] C++
   - [x] Python 
 - [x] Expanding on ROS 2 interfaces  
-- [ ] Using parameters in a class (C++)  
+- [x] Using parameters in a class (C++)  
 - [ ] Using parameters in a class (Python)  
 - [ ] Getting started with ros2doctor  
 - [ ] Creating and Using Plugins (C++)  
