@@ -121,7 +121,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Creating custom ROS 2 msg and srv files  
   - [x] C++
   - [x] Python 
-- [ ] Expanding on ROS 2 interfaces  
+- [x] Expanding on ROS 2 interfaces  
 - [ ] Using parameters in a class (C++)  
 - [ ] Using parameters in a class (Python)  
 - [ ] Getting started with ros2doctor  
