@@ -128,6 +128,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Creating and Using Plugins (C++)  
 
 
+### Intermediate
 [Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
 
 - [ ] Creating an action  
@@ -140,7 +141,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] tf2 Tutorials  
 - [ ] URDF Tutorials  
 
-
+### Advanced
 [Advanced](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
 
 - [ ] ROS 2 Topic Statistics Tutorial (C++)  
@@ -150,10 +151,12 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Recording a bag from your own node (C++)  
 - [ ] Recording a bag from your own node (Python)  
 
+### Simulation
 [Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
 
 - [ ] Simulation Tutorials  
 
+### Miscellaneous
 [Miscellaneous](http://docs.ros.org/en/galactic/Tutorials.html#miscellaneous) 
 
 - [ ] ROS2 on IBM Cloud Kubernetes [community-contributed]  
@@ -162,6 +165,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Building ROS 2 Package with eclipse 2021-06  
 
 
+### Demos
 [Demos](http://docs.ros.org/en/galactic/Tutorials.html#demos)
 
 - [ ] Use quality-of-service settings to handle lossy networks.  
@@ -180,14 +184,13 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Use DDS-Security.  
 - [ ] Logging and logger configuration.  
 
+### Examples
 [Examples](http://docs.ros.org/en/galactic/Tutorials.html#examples) 
 
 - [ ] Python and C++ minimal examples.  
 
 
-
-
-### Referências
+## Referências
 
 - [Documentação ROS Galatic](http://docs.ros.org/en/galactic/index.html)
 

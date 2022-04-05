@@ -452,10 +452,39 @@ int64 sum
   add_two_ints_client2.py
 
 
+[Expanding on ROS 2 interfaces](http://docs.ros.org/en/galactic/Tutorials/Single-Package-Define-And-Use-Interface.html) 
+
+
+Para este tutorial foi criado o pacote more_interfaces:
+``` shell
+ros2 pkg create --build-type ament_cmake more_interfaces
+```
+
+Para a utilização de mensagens customizadasfoi criado o arquivo msg/AddressBook.msg. 
+
+``` msg
+bool FEMALE=true
+bool MALE=false
+
+string first_name
+string last_name
+bool gender
+uint8 age
+string address
+``` 
+
+Os arquivos package.xml e CMakeLists.txt foram editados para o correto funcionamento do pacote.
+
+Como complemento foram criados 2 arquivos:
+
+publish_address_book.cpp(fornecido no tutorial)
+
+subscriber_address_book.cpp(criado como foi sugerido no tutorial)
+
 <!--  -->
 Proximos  
 
-[Expanding on ROS 2 interfaces]()  
+ 
 [Using parameters in a class (C++)]()  
 [Using parameters in a class (Python)]()  
 [Getting started with ros2doctor]()  
