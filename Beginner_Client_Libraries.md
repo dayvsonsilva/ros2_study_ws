@@ -511,10 +511,46 @@ Foram realizados alterações nos arquivos package.xml e setup.py.
 Foram criados dois arquivos, python_parameters_node.py  e launch/python_parameters_launch.py, o laquivo launch fou utilizado para aterar o parametro 
 ainda no carregamento do nó.
 
+[Getting started with ros2doctor](http://docs.ros.org/en/galactic/Tutorials/Getting-Started-With-Ros2doctor.html)  
+
+
+"O ros2doctor verifica todos os aspectos do ROS 2, incluindo plataforma, versão, rede, ambiente, sistemas em execução e muito mais, e avisa sobre possíveis erros e motivos para problemas."
+
+Rodar doctor
+```
+ros2 doctor
+```
+
+Quando executado sem nós rodando o doctor checa a instalação do ros2, quando executando durante o funcionamento de um nó o doctor retorna possiveis problemas.
+
+
+Outra função do doctor é o --report
+```
+ros2 doctor --report
+```
+
+```
+NETWORK CONFIGURATION
+...
+
+PLATFORM INFORMATION
+...
+
+RMW MIDDLEWARE
+...
+
+ROS 2 INFORMATION
+...
+
+TOPIC LIST
+...
+
+```
+
 <!--  -->
 Proximos  
 
 
 
-[Getting started with ros2doctor]()  
+
 [Creating and Using Plugins (C++)]()
