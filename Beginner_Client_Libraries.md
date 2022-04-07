@@ -497,11 +497,24 @@ Foram realizados alterações nos arquivos package.xml e CMakeLists.txt.
 Foram criados dois arquivos, um chamado cpp_parameters_node.cpp e cpp_parameters_launch.py, o primeiro cria um nó que carrega parametro defaul "world" e o launch carrega o executavel "cpp_parameters" porem seta como parametro  "earth".
 
 
+[Using parameters in a class (Python)](http://docs.ros.org/en/galactic/Tutorials/Using-Parameters-In-A-Class-Python.html)  
+
+Neste turorial é abordado a utilização de parametros a partir de arquivos launch utilizando um pacote ament_python.
+
+Pacote criado para este tutorial
+``` shell
+ros2 pkg create --build-type ament_python python_parameters --dependencies rclpy
+```
+
+Foram realizados alterações nos arquivos package.xml e setup.py.
+
+Foram criados dois arquivos, python_parameters_node.py  e launch/python_parameters_launch.py, o laquivo launch fou utilizado para aterar o parametro 
+ainda no carregamento do nó.
+
 <!--  -->
 Proximos  
 
- 
-[Using parameters in a class (C++)]()  
-[Using parameters in a class (Python)]()  
+
+
 [Getting started with ros2doctor]()  
 [Creating and Using Plugins (C++)]()
