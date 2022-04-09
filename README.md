@@ -94,7 +94,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 ### Beginner
 
-[Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools)
+[Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools) <!--10-->
 
 - [x] Configuring your ROS 2 environment  
 - [x] Introducing turtlesim and rqt  
@@ -108,7 +108,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Recording and playing back data  
 
 
-[Beginner: Client Libraries](http://docs.ros.org/en/galactic/Tutorials.html#beginner-client-libraries) 
+[Beginner: Client Libraries](http://docs.ros.org/en/galactic/Tutorials.html#beginner-client-libraries) <!--16-->
 
 - [x] Creating a workspace  
 - [x] Creating your first ROS 2 package  
@@ -129,9 +129,9 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 
 ### Intermediate
-[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
+[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--9-->
 
-- [ ] Creating an action  
+- [x] Creating an action  
 - [ ] Writing an action server and client (C++)  
 - [ ] Writing an action server and client (Python)  
 - [ ] Composing multiple nodes in a single process  
@@ -142,7 +142,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] URDF Tutorials  
 
 ### Advanced
-[Advanced](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
+[Advanced](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--6-->
 
 - [ ] ROS 2 Topic Statistics Tutorial (C++)  
 - [ ] Using Fast DDS Discovery Server as discovery protocol [community-contributed]  
@@ -152,12 +152,12 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Recording a bag from your own node (Python)  
 
 ### Simulation
-[Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
+[Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)<!--1-->
 
 - [ ] Simulation Tutorials  
 
 ### Miscellaneous
-[Miscellaneous](http://docs.ros.org/en/galactic/Tutorials.html#miscellaneous) 
+[Miscellaneous](http://docs.ros.org/en/galactic/Tutorials.html#miscellaneous) <!--4-->
 
 - [ ] ROS2 on IBM Cloud Kubernetes [community-contributed]  
 - [ ] Eclipse Oxygen with ROS 2 and rviz2 [community-contributed]  
@@ -165,7 +165,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Building ROS 2 Package with eclipse 2021-06  
 
 
-### Demos
+### Demos<!--15-->
 [Demos](http://docs.ros.org/en/galactic/Tutorials.html#demos)
 
 - [ ] Use quality-of-service settings to handle lossy networks.  
@@ -184,7 +184,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Use DDS-Security.  
 - [ ] Logging and logger configuration.  
 
-### Examples
+### Examples <!--1-->
 [Examples](http://docs.ros.org/en/galactic/Tutorials.html#examples) 
 
 - [ ] Python and C++ minimal examples.  
