@@ -18,8 +18,8 @@ target_include_directories(polygon_plugins PUBLIC
   $<INSTALL_INTERFACE:include>)
 ament_target_dependencies(
   polygon_plugins
-  "polygon_base"
-  "pluginlib"
+  polygon_base
+  pluginlib
 )
 
 # Causes the visibility macros to use dllexport rather than dllimport,
@@ -30,6 +30,8 @@ install(
   DIRECTORY include/
   DESTINATION include
 )
+
+pluginlib_export_plugin_description_file(polygon_base plugins.xml)
 install(
   TARGETS polygon_plugins
   EXPORT export_${PROJECT_NAME}

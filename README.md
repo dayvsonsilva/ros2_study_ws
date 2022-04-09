@@ -125,7 +125,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Using parameters in a class (C++)  
 - [x] Using parameters in a class (Python)  
 - [x] Getting started with ros2doctor  
-- [ ] Creating and Using Plugins (C++) 
+- [x] Creating and Using Plugins (C++) 
 
 
 ### Intermediate

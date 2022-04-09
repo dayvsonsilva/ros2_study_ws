@@ -551,3 +551,38 @@ TOPIC LIST
 
 "pluginlib é uma biblioteca C++ para carregar e descarregar plugins de dentro de um pacote ROS. Plugins são classes carregáveis dinamicamente que são carregadas de uma biblioteca de tempo de execução (ou seja, objeto compartilhado, biblioteca vinculada dinamicamente). Com pluginlib, não é necessário vincular explicitamente seu aplicativo à biblioteca que contém as classes – em vez disso, o pluginlib pode abrir uma biblioteca contendo classes exportadas a qualquer momento sem que o aplicativo tenha conhecimento prévio da biblioteca ou do arquivo de cabeçalho que contém a definição da classe. Os plug-ins são úteis para estender/modificar o comportamento do aplicativo sem precisar do código-fonte do aplicativo.
 "
+
+Para este turorial fora criados dois pacotes
+
+```
+ros2 pkg create --build-type ament_cmake polygon_base --dependencies pluginlib --node-name area_node
+```
+
+```
+ros2 pkg create --build-type ament_cmake polygon_plugins --dependencies polygon_base pluginlib --library-name polygon_plugins
+```
+
+Os arquivos a seguir foram criados/editados:
+
+dev_ws/src/polygon_base/include/polygon_base/regular_polygon.hpp
+dev_ws/src/polygon_base/CMakeLists.txt
+dev_ws/src/polygon_plugins/src/polygon_plugins.cpp
+dev_ws/src/polygon_plugins/plugins.xml
+dev_ws/src/polygon_plugins/CMakeLists.txt
+dev_ws/src/polygon_base/src/area_node.cpp
+
+
+Especificamente no arquivo dev_ws/src/polygon_plugins/CMakeLists.txt
+o codigo apresentado no tutorial não funcionou, sendo nescessario alterações para posibilitar a execução do colcon build sem erros.
+
+Ao executar:
+```
+. install/setup.bash
+ros2 run polygon_base area_node
+```
+Retorno:
+```
+Triangle area: 43.30
+Square area: 100.00
+```
+
