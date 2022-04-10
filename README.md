@@ -119,7 +119,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 
 ### Intermediate
-[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--9-->
+[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--32-->
 
 - [x] Creating an action  
 - [x] Writing an action server and client (C++)  
@@ -128,8 +128,42 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Using colcon to build packages  
 - [ ] Monitoring for parameter changes (C++)  
 - [ ] Launch Tutorials  
-- [ ] tf2 Tutorials  
-- [ ] URDF Tutorials  
+  - [ ] Creating a ROS 2 Launch File.
+  - [ ] Launching and Monitor Multiple Nodes with Launch.
+  - [ ] Using Substitutions.
+  - [ ] Using Event Handlers.
+  - [ ] Using ROS 2 Launch For Large Projects.
+- [ ] tf2 Tutorials
+  - [ ] Learning tf2   
+    - [ ] Introduction to tf2.
+    - [ ] Writing a tf2 static broadcaster 
+      - [ ] (Python) 
+      - [ ] (C++)
+    - [ ] Writing a tf2 broadcaster
+      - [ ] (Python) 
+      - [ ] (C++)
+    - [ ] Writing a tf2 listener.
+      - [ ] (Python) 
+      - [ ] (C++)
+    - [ ] Adding a frame  
+      - [ ] (Python) 
+      - [ ] (C++)
+    - [ ] Learning about tf2 and time (Python) (C++).
+      - [ ] (Python) 
+      - [ ] (C++)
+    - [ ] Time travel with tf2.
+      - [ ] (Python) 
+      - [ ] (C++)
+  - [ ] Debugging tf2
+    - [ ] Quaternion fundamentals.
+    - [ ] Debugging tf2 problems.
+  - [ ] Using sensor messages with tf2
+- [ ] URDF Tutorials
+  - [ ] Building a Visual Robot Model with URDF from Scratch
+  - [ ] Building a Movable Robot Model with URDF
+  - [ ] Adding Physical and Collision Properties to a URDF Model
+  - [ ] Using Xacro to Clean Up a URDF File
+  - [ ] Using URDF with robot_state_publisher
 
 ### Advanced
 [Advanced](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--6-->

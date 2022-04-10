@@ -75,6 +75,23 @@ Na primeira etapa do tutorial é abordado um formato mais simples do server e cl
 
 [Composing multiple nodes in a single process]()  
 
+"Para ver quais componentes estão registrados e disponíveis no espaço de trabalho, execute o seguinte em um shell:"
+
+```
+ros2 component types
+```
+Retorna:
+```
+(... components of other packages here)
+composition
+  composition::Talker
+  composition::Listener
+  composition::NodeLikeListener
+  composition::Server
+  composition::Client
+(... components of other packages here)
+```  
+
 [Using colcon to build packages]()  
 
 [Monitoring for parameter changes (C++)]()  
