@@ -24,7 +24,8 @@ echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bashrc
 
 [Introducing turtlesim and rqt](http://docs.ros.org/en/galactic/Tutorials/Turtlesim/Introducing-Turtlesim.html)  
 
-Instalar pacote turtlesim
+Instalar pacote turtlesim  
+
 ``` shell 
 sudo apt update
 sudo apt install ros-galactic-turtlesim

@@ -3,7 +3,7 @@
 
 [Creating an action](http://docs.ros.org/en/galactic/Tutorials/Actions/Creating-an-Action.html)  
 
-Você aprendeu sobre ações anteriormente no tutorial Entendendo as ações do ROS 2. Assim como os outros tipos de comunicação e suas respectivas interfaces (tópicos/msg e serviços/srv), você também pode definir ações personalizadas em seus pacotes. Este tutorial mostra como definir e construir uma ação que você pode usar com o servidor de ação e o cliente de ação que você escreverá no próximo tutorial.
+"Você aprendeu sobre ações anteriormente no tutorial Entendendo as ações do ROS 2. Assim como os outros tipos de comunicação e suas respectivas interfaces (tópicos/msg e serviços/srv), você também pode definir ações personalizadas em seus pacotes. Este tutorial mostra como definir e construir uma ação que você pode usar com o servidor de ação e o cliente de ação que você escreverá no próximo tutorial."
 
 
 o principal arquivo deste pacote é o Fibonacci.action.
@@ -21,7 +21,33 @@ CMakeLists.txt
 package.xml
 
 
-[Writing an action server and client (C++)]()  
+[Writing an action server and client (C++)](http://docs.ros.org/en/galactic/Tutorials/Actions/Writing-a-Cpp-Action-Server-Client.html)  
+
+"As ações são uma forma de comunicação assíncrona no ROS. Os clientes de ação enviam solicitações de meta para servidores de ação. Os servidores de ação enviam feedback de metas e resultados para clientes de ação.
+"
+
+Criando o pacote
+```
+ros2 pkg create --dependencies action_tutorials_interfaces rclcpp rclcpp_action rclcpp_components -- action_tutorials_cpp
+``` 
+
+Arquivos criados/editados:
+action_tutorials_cpp/CMakeLists.txt
+action_tutorials_cpp/package.xml
+action_tutorials_cpp/include/action_tutorials_cpp/visibility_control.h
+action_tutorials_cpp/src/fibonacci_action_server.cpp
+action_tutorials_cpp/src/fibonacci_action_client.cpp
+
+
+Execute os comados abaixo em terminais distintos:
+``` shell
+ros2 run action_tutorials_cpp fibonacci_action_server
+```
+``` shell
+ros2 run action_tutorials_cpp fibonacci_action_client
+```
+
+
 
 [Writing an action server and client (Python)]()  
 

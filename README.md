@@ -1,8 +1,7 @@
 ---
 TOCTitle: Markdown
-
 ---
-
+<!-- cSpell:enable -->
 # ros2_study
 
 ## Introdução
@@ -11,7 +10,7 @@ TOCTitle: Markdown
  
 Repositório com registros e códigos de tutoriais realizados seguindo a documentação do ROS2 Galactic. Durante os estudos foi utilizado o SO Ubuntu 20.04. 
  
-O objetivo deste repositório é registrar informações importantes e ou códigos em formato original ou modificados, sendo seu uso exclusivamente para uso próprio e didático, não sendo recomendado a utilização de seus códigos e informações para aplicações que possam vir a gerar prejuízos de qualquer natureza.
+O objetivo deste repositório é registrar informações importantes e ou códigos em formato original ou modificados, sendo exclusivamente para uso próprio e didático, não sendo recomendado a utilização de seus códigos e informações para aplicações que possam vir a gerar prejuízos de qualquer natureza.
 </div>
 
 
@@ -29,14 +28,7 @@ Para melhor aproveitamento dos tutoriais é importante que se tenha conhecimento
 A documentação original aborda formatos diferentes de instalação, incluindo instalação em vários sistemas operacionais. Para os estudos é sugerido utilizar a instalação via pacotes debian pela facilidade, visto que no primeiro momento o foco é o estudos dos pacotes ROS2 disponíveis para diversas aplicações, em casos onde o ROS2 será utilizado em uma versão do Linux que não tenha suporte nativo será necessário revisitar a página oficial da documentação do [ROS2 Galatic - Installation](http://docs.ros.org/en/galactic/Installation.html#installation). 
  
 O bloco de codigo abaixo tras um resumo com os comando para instalação do ROS 2 Galactic, para entender o passo-a-passo da instalação é sugerido que seja realizado uma visita a pagina [Installing ROS 2 via Debian Packages](http://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#installing-ros-2-via-debian-packages) 
-</div>
-
-
-```c++  
-a=2;
-```
-
-
+</div>  
 
 ```shell  
 # Set locale
@@ -87,9 +79,7 @@ ros2 run demo_nodes_py listener
 ## Tutoriais 
 A partir da instalação do ROS2 é possível iniciar a execução dos tutoriais.
 
-
 OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e registrar informações importantes em arquivos Markdown.
-
 
 
 ### Beginner
@@ -132,7 +122,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 [Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--9-->
 
 - [x] Creating an action  
-- [ ] Writing an action server and client (C++)  
+- [x] Writing an action server and client (C++)  
 - [ ] Writing an action server and client (Python)  
 - [ ] Composing multiple nodes in a single process  
 - [ ] Using colcon to build packages  
