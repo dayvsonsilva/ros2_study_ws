@@ -123,7 +123,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 - [x] Creating an action  
 - [x] Writing an action server and client (C++)  
-- [ ] Writing an action server and client (Python)  
+- [x] Writing an action server and client (Python)  
 - [ ] Composing multiple nodes in a single process  
 - [ ] Using colcon to build packages  
 - [ ] Monitoring for parameter changes (C++)  
