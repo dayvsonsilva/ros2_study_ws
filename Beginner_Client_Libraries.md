@@ -128,7 +128,7 @@ workspace_folder/
 
 Criando um pacote CMake
 ``` shell
-ros2 pkg creat -- build-type ament_cmake <package_name>
+ros2 pkg create -- build-type ament_cmake <package_name>
 ```
 
 Utilizando o parametro  --node-name para gerar um executavel de teste
