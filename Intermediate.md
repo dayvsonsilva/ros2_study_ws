@@ -142,7 +142,52 @@ Ainda é possivel realizar o teste do ambiente.
 colcon test
 ```
 
-[Monitoring for parameter changes (C++)]()  
+[Monitoring for parameter changes (C++)](http://docs.ros.org/en/galactic/Tutorials/Monitoring-For-Parameter-Changes-CPP.html)  
+
+"Muitas vezes, um nó precisa responder a alterações em seus próprios parâmetros ou nos parâmetros de outro nó. A classe ParameterEventHandler facilita a escuta de alterações de parâmetro para que seu código possa responder a elas. Este tutorial mostrará como usar a versão C++ da classe ParameterEventHandler para monitorar alterações nos parâmetros de um nó, bem como alterações nos parâmetros de outro nó."
+
+
+```
+ros2 pkg create --build-type ament_cmake cpp_parameter_event_handler --dependencies rclcpp
+```
+Arquivos criados/editados:
+
+package.xml
+parameter_event_handler1.cpp
+parameter_event_handler.cpp 
+
+Primeira parte do tutorial
+Terminal 1
+```
+ros2 run cpp_parameter_event_handler parameter_event_handler
+```
+Terminal 2
+```
+ros2 param set node_with_parameters an_int_param 43
+```
+retorno 
+```
+[INFO] [1606950498.422461764] [node_with_parameters]: cb: Received an update to parameter "an_int_param" of type integer: "43"
+```  
+
+Segunda parte
+Terminal 1
+```
+ros2 run cpp_parameter_event_handler parameter_event_handler
+```
+Terminal 2
+```
+ros2 run demo_nodes_cpp parameter_blackboard
+```
+Terminal 3
+```
+ros2 param set parameter_blackboard a_double_param 3.45
+```
+
+Retorno
+```
+[INFO] [1606952588.237531933] [node_with_parameters]: cb2: Received an update to parameter "a_double_param" of type: double: "3.45"
+```
 
 [Launch Tutorials]()  
 

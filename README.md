@@ -126,7 +126,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Writing an action server and client (Python)  
 - [ ] Composing multiple nodes in a single process  REFAZER
 - [x] Using colcon to build packages  
-- [ ] Monitoring for parameter changes (C++)  
+- [x] Monitoring for parameter changes (C++)  
 - [ ] Launch Tutorials  
   - [ ] Creating a ROS 2 Launch File.
   - [ ] Launching and Monitor Multiple Nodes with Launch.
