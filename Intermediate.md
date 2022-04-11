@@ -73,7 +73,7 @@ Na primeira etapa do tutorial é abordado um formato mais simples do server e cl
 
 
 
-[Composing multiple nodes in a single process]()  
+[Composing multiple nodes in a single process](http://docs.ros.org/en/galactic/Tutorials/Composition.html)  REFAZER
 
 "Para ver quais componentes estão registrados e disponíveis no espaço de trabalho, execute o seguinte em um shell:"
 
@@ -92,7 +92,55 @@ composition
 (... components of other packages here)
 ```  
 
-[Using colcon to build packages]()  
+[Using colcon to build packages](http://docs.ros.org/en/galactic/Tutorials/Colcon-Tutorial.html)  
+
+
+Underlay - Instalação /opt/ros/galactic/setup.bash  
+Overlay - Workspace ~/ros2_study_ws
+
+Para criar um ambiente de trabalho(Workspace ou ws):
+```
+mkdir -p ~/ros2_study_ws/src
+cd ~/ros2_study_ws
+```
+
+Após criar o diretorio, os pacotes de trabalho devem ser adicionados ao diretorio src:
+obs: clonar repo git clone https://github.com/ros2/examples src/examples -b galactic
+```
+.
+└── src
+    └── examples
+        ├── CONTRIBUTING.md
+        ├── LICENSE
+        ├── rclcpp
+        ├── rclpy
+        └── README.md
+
+4 directories, 3 files
+```
+
+"Na raiz da área de trabalho, execute colcon build. Como tipos de compilação como ament_cmake não suportam o conceito de espaço devel e requerem que o pacote seja instalado, colcon suporta a opção --symlink-install. Isso permite que os arquivos instalados sejam alterados alterando os arquivos no espaço de origem (por exemplo, arquivos Python ou outros não compilados com recursos) para uma iteração mais rápida."
+
+```
+colcon build --symlink-install
+```
+
+Após o build do workspace tera os seguintes diretorios
+
+```
+.
+├── build
+├── install
+├── log
+└── src
+
+4 directories, 0 files
+```
+
+Ainda é possivel realizar o teste do ambiente.
+```
+colcon test
+```
 
 [Monitoring for parameter changes (C++)]()  
 
