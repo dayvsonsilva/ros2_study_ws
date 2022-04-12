@@ -128,7 +128,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Using colcon to build packages  
 - [x] Monitoring for parameter changes (C++)  
 - [ ] Launch Tutorials  
-  - [ ] Creating a ROS 2 Launch File.
+  - [x] Creating a ROS 2 Launch File.
   - [ ] Launching and Monitor Multiple Nodes with Launch.
   - [ ] Using Substitutions.
   - [ ] Using Event Handlers.

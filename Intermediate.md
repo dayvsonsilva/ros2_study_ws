@@ -191,6 +191,45 @@ Retorno
 
 [Launch Tutorials]()  
 
+[Creating a ROS 2 Launch File.](http://docs.ros.org/en/galactic/Tutorials/Launch/Creating-Launch-Files.html) 
+
+Criando um arquivo de launch para ros2
+
+Arquivo criado no turorial
+src/ros_tutorials/launch/turtlesim_mimic_launch.py
+
+
+```
+cd launch
+ros2 launch turtlesim_mimic_launch.py
+```
+
+O comando ira abrir duas instancias do turtlesim.
+
+No segundo terminal executar o comando abaixo:
+```
+ros2 topic pub -r 1 /turtlesim1/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"
+```
+
+Para visualizar a interligação entre nós basta rodar o comando:
+```
+rqt_graph
+```  
+
+
+[Launching and Monitor Multiple Nodes with Launch.]() 
+[Using Substitutions.]() 
+[Using Event Handlers.]() 
+[Using ROS 2 Launch For Large Projects.]() 
+
+
+
+
+
+
+
+
+
 [tf2 Tutorials]()  
 
 [URDF Tutorials]()  
