@@ -129,11 +129,11 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Monitoring for parameter changes (C++)  
 - [ ] Launch Tutorials  
   - [x] Creating a ROS 2 Launch File.
-  - [ ] Launching and Monitor Multiple Nodes with Launch.
+  - [x] Launching and Monitor Multiple Nodes with Launch.
   - [ ] Using Substitutions.
   - [ ] Using Event Handlers.
   - [ ] Using ROS 2 Launch For Large Projects.
-- [ ] tf2 Tutorials
+- [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)
   - [ ] Learning tf2   
     - [ ] Introduction to tf2.
     - [ ] Writing a tf2 static broadcaster 

@@ -189,7 +189,7 @@ Retorno
 [INFO] [1606952588.237531933] [node_with_parameters]: cb2: Received an update to parameter "a_double_param" of type: double: "3.45"
 ```
 
-[Launch Tutorials]()  
+[Launch Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)  
 
 [Creating a ROS 2 Launch File.](http://docs.ros.org/en/galactic/Tutorials/Launch/Creating-Launch-Files.html) 
 
@@ -217,7 +217,21 @@ rqt_graph
 ```  
 
 
-[Launching and Monitor Multiple Nodes with Launch.]() 
+[Launching and Monitor Multiple Nodes with Launch.](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-system.html) 
+
+"O sistema de lançamento no ROS 2 é responsável por ajudar o usuário a descrever a configuração de seu sistema e então executá-lo conforme descrito. A configuração do sistema inclui quais programas executar, onde executá-los, quais argumentos transmiti-los e convenções específicas do ROS que facilitam a reutilização de componentes em todo o sistema, fornecendo a cada um configurações diferentes. Também é responsável por monitorar o estado dos processos iniciados, reportar e/ou reagir a mudanças no estado desses processos."  
+
+Para este turorial foi utilizado o pacote my_package_py.
+
+Arquivos criados/editados:  
+setup.py
+launch/my_script.launch.py
+
+
+```
+ros2 launch my_package_py my_script.launch.py
+```
+
 [Using Substitutions.]() 
 [Using Event Handlers.]() 
 [Using ROS 2 Launch For Large Projects.]() 
