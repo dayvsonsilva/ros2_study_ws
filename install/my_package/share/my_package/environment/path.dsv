@@ -1,1 +1,1 @@
-/home/dayvson/ros2_study_ws/build/my_package/ament_cmake_environment_hooks/path.dsv
+prepend-non-duplicate-if-exists;PATH;bin
