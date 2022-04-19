@@ -236,7 +236,10 @@ ros2 launch my_package_py my_script.launch.py
 
 "Os arquivos de inicialização são usados para iniciar nós, serviços e executar processos. Esse conjunto de ações pode ter argumentos, que afetam seu comportamento. As substituições podem ser usadas em argumentos para fornecer mais flexibilidade ao descrever arquivos de inicialização reutilizáveis. As substituições são variáveis que são avaliadas apenas durante a execução da descrição de execução e podem ser usadas para adquirir informações específicas como uma configuração de execução, uma variável de ambiente ou para avaliar uma expressão arbitrária do Python."
 
+ Para o Tutorial foram criados dois arquivos:
 
+ launch/example_main.launch.py
+ launch/example_substitutions.launch.py
 
 [Using Event Handlers.]() 
 [Using ROS 2 Launch For Large Projects.]() 
