@@ -130,7 +130,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Launch Tutorials  
   - [x] Creating a ROS 2 Launch File.
   - [x] Launching and Monitor Multiple Nodes with Launch.
-  - [ ] Using Substitutions.
+  - [x] Using Substitutions.
   - [ ] Using Event Handlers.
   - [ ] Using ROS 2 Launch For Large Projects.
 - [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)
