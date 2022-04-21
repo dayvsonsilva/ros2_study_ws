@@ -241,7 +241,54 @@ ros2 launch my_package_py my_script.launch.py
  launch/example_main.launch.py
  launch/example_substitutions.launch.py
 
-[Using Event Handlers.]() 
+Terminal 1
+```
+ros2 launch launch_tutorial example_substitutions.launch.py --show-args
+```
+
+Terminal 2
+```
+ros2 launch launch_tutorial example_substitutions.launch.py turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
+```
+
+[Using Event Handlers.](http://docs.ros.org/en/galactic/Tutorials/Launch/Using-Event-Handlers.html) 
+
+"Launch in ROS 2 é um sistema que executa e gerencia processos definidos pelo usuário. Ele é responsável por monitorar o estado dos processos que lançou, bem como relatar e reagir às mudanças no estado desses processos. Essas alterações são chamadas de eventos e podem ser tratadas registrando um manipulador de eventos no sistema de inicialização. Os manipuladores de eventos podem ser registrados para eventos específicos e podem ser úteis para monitorar o estado dos processos. Além disso, eles podem ser usados para definir um conjunto complexo de regras que podem ser usadas para modificar dinamicamente o arquivo de inicialização."
+
+Para o tutorial foi criado o arquivo launch/tutorial/launch/example_event_handlers.launch.py
+
+Executando o launch
+```
+ros2 launch launch_tutorial example_event_handlers.launch.py turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
+``
+Passos executados pelo launch
+This will do the following:
+
+    Start a turtlesim node with a blue background
+
+    Spawn the second turtle
+
+    Change the color to purple
+
+    Change the color to pink after two seconds if the provided background_r argument is 200 and use_provided_red argument is True
+
+    Shutdown the launch file when the turtlesim window is closed
+
+Additionally, it will log messages to the console when:
+
+    The turtlesim node starts
+
+    The spawn action is executed
+
+    The change_background_r action is executed
+
+    The change_background_r_conditioned action is executed
+
+    The turtlesim node exits
+
+    The launch process is asked to shutdown.
+
+
 [Using ROS 2 Launch For Large Projects.]() 
 
 
