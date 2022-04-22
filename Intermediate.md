@@ -255,12 +255,13 @@ ros2 launch launch_tutorial example_substitutions.launch.py turtlesim_ns:='turtl
 
 "Launch in ROS 2 é um sistema que executa e gerencia processos definidos pelo usuário. Ele é responsável por monitorar o estado dos processos que lançou, bem como relatar e reagir às mudanças no estado desses processos. Essas alterações são chamadas de eventos e podem ser tratadas registrando um manipulador de eventos no sistema de inicialização. Os manipuladores de eventos podem ser registrados para eventos específicos e podem ser úteis para monitorar o estado dos processos. Além disso, eles podem ser usados para definir um conjunto complexo de regras que podem ser usadas para modificar dinamicamente o arquivo de inicialização."
 
+
 Para o tutorial foi criado o arquivo launch/tutorial/launch/example_event_handlers.launch.py
 
 Executando o launch
 ```
 ros2 launch launch_tutorial example_event_handlers.launch.py turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
-``
+```
 Passos executados pelo launch
 This will do the following:
 
@@ -289,8 +290,10 @@ Additionally, it will log messages to the console when:
     The launch process is asked to shutdown.
 
 
-[Using ROS 2 Launch For Large Projects.]() 
+[Using ROS 2 Launch For Large Projects.](http://docs.ros.org/en/galactic/Tutorials/Launch/Using-ROS2-Launch-For-Large-Projects.html) 
 
+
+"Este tutorial descreve algumas dicas para escrever arquivos de inicialização para projetos grandes. O foco está em como estruturar os arquivos de inicialização para que possam ser reutilizados o máximo possível em diferentes situações. Além disso, abrange exemplos de uso de diferentes ferramentas de inicialização do ROS 2, como parâmetros, arquivos YAML, remapeamentos, namespaces, argumentos padrão e configurações RViz."
 
 
 
