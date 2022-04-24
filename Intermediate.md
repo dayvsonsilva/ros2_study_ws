@@ -310,6 +310,8 @@ config/turtlesim.yaml
 
 ros2 launch launch_tutorial launch_turtlesim.launch.py  
 
+* Nescessario instalar pacote
+sudo apt install ros-galactic-turtle-tf2-py
 [tf2 Tutorials]()  
 
 [URDF Tutorials]()  
