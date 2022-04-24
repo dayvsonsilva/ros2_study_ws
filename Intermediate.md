@@ -295,12 +295,20 @@ Additionally, it will log messages to the console when:
 
 "Este tutorial descreve algumas dicas para escrever arquivos de inicialização para projetos grandes. O foco está em como estruturar os arquivos de inicialização para que possam ser reutilizados o máximo possível em diferentes situações. Além disso, abrange exemplos de uso de diferentes ferramentas de inicialização do ROS 2, como parâmetros, arquivos YAML, remapeamentos, namespaces, argumentos padrão e configurações RViz."
 
+Arquivos criados no tutorial:
+
+launch/launch_turtlesim.launch.py
+launch/turtlesim_world_1.launch.py
+launch/turtlesim_world_2.launch.py
+launch/turtlesim_world_3.launch.py
+launch/broadcaster_listener.launch.py
+launch/mimic.launch.py
+launch/turtlesim_rviz.launch.py
+launch/fixed_broadcaster.launch.py
+config/turtlesim.yaml
 
 
-
-
-
-
+ros2 launch launch_tutorial launch_turtlesim.launch.py  
 
 [tf2 Tutorials]()  
 
