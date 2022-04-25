@@ -312,6 +312,47 @@ ros2 launch launch_tutorial launch_turtlesim.launch.py
 
 * Nescessario instalar pacote
 sudo apt install ros-galactic-turtle-tf2-py
-[tf2 Tutorials]()  
+
+
+[tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Tf2/Tf2-Main.html)  
+
+- [ ] Learning tf2   
+
+[Introduction to tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Introduction-To-Tf2.html)
+
+Para este tutorial o pacote a seguir deve ser instalado:
+```
+sudo apt-get install ros-galactic-turtle-tf2-py ros-galactic-tf2-tools ros-galactic-tf-transformations
+```
+
+[Writing a tf2 static broadcaster]() 
+- Python 
+- C++
+
+[Writing a tf2 broadcaster]()
+- Python  
+- C++
+    
+[Writing a tf2 listener.]()
+- Python  
+- C++
+
+[Adding a frame]()  
+- Python  
+- C++
+
+[Learning about tf2 and time]()
+- Python  
+- C++
+
+[Time travel with tf2.]()
+- Python  
+- C++
+
+[Debugging tf2]()
+- [ ] Quaternion fundamentals.
+- [ ] Debugging tf2 problems.
+
+[Using sensor messages with tf2]()
 
 [URDF Tutorials]()  
