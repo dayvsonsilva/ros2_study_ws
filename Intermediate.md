@@ -320,10 +320,32 @@ sudo apt install ros-galactic-turtle-tf2-py
 
 [Introduction to tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Introduction-To-Tf2.html)
 
+"Objetivo: Executar uma demonstração do turtlesim e ver um pouco do poder do tf2 em um exemplo multi-robô usando o turtlesim."
+
 Para este tutorial o pacote a seguir deve ser instalado:
 ```
 sudo apt-get install ros-galactic-turtle-tf2-py ros-galactic-tf2-tools ros-galactic-tf-transformations
 ```
+
+```
+pip3 install transforms3d
+```
+tf2 tools
+
+1 Using view_frames
+```
+ros2 run tf2_tools view_frames
+```
+
+2 Using tf2_echo
+```
+ros2 run tf2_ros tf2_echo turtle2 turtle1
+```
+
+rviz and tf2
+```
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
+``
 
 [Writing a tf2 static broadcaster]() 
 - Python 

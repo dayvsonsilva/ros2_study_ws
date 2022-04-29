@@ -127,15 +127,15 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Composing multiple nodes in a single process  REFAZER
 - [x] Using colcon to build packages  
 - [x] Monitoring for parameter changes (C++)  
-- [ ] Launch Tutorials  
+- [x] Launch Tutorials  
   - [x] Creating a ROS 2 Launch File.
   - [x] Launching and Monitor Multiple Nodes with Launch.
   - [x] Using Substitutions.
   - [x] Using Event Handlers.
-  - [ ] Using ROS 2 Launch For Large Projects.
+  - [X] Using ROS 2 Launch For Large Projects.
 - [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)
   - [ ] Learning tf2   
-    - [ ] Introduction to tf2.
+    - [X] Introduction to tf2.
     - [ ] Writing a tf2 static broadcaster 
       - [ ] (Python) 
       - [ ] (C++)
