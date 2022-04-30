@@ -7,7 +7,7 @@
 
 
 o principal arquivo deste pacote é o Fibonacci.action.
-```
+```msg
 int32 order # Request
 ---
 int32[] sequence # Result
@@ -27,7 +27,7 @@ package.xml
 "
 
 Criando o pacote
-```
+```sh
 ros2 pkg create --dependencies action_tutorials_interfaces rclcpp rclcpp_action rclcpp_components -- action_tutorials_cpp
 ``` 
 
@@ -40,10 +40,11 @@ action_tutorials_cpp/src/fibonacci_action_client.cpp
 
 
 Execute os comados abaixo em terminais distintos:
-``` shell
+```sh
 ros2 run action_tutorials_cpp fibonacci_action_server
 ```
-``` shell
+
+```sh
 ros2 run action_tutorials_cpp fibonacci_action_client
 ```
 
@@ -54,7 +55,7 @@ ros2 run action_tutorials_cpp fibonacci_action_client
 "As ações são uma forma de comunicação assíncrona no ROS 2. Clientes de ação enviam solicitações de meta para servidores de ação. Os servidores de ação enviam feedback de metas e resultados para clientes de ação."
 
 Criando o pacote
-```
+```sh
 ros2 pkg create --build-type ament_python action_tutorials_py  --dependencies rclpy action_tutorials_interfaces
 ```
 
@@ -77,11 +78,12 @@ Na primeira etapa do tutorial é abordado um formato mais simples do server e cl
 
 "Para ver quais componentes estão registrados e disponíveis no espaço de trabalho, execute o seguinte em um shell:"
 
-```
+```sh
 ros2 component types
 ```
+
 Retorna:
-```
+```sh
 (... components of other packages here)
 composition
   composition::Talker
@@ -99,14 +101,14 @@ Underlay - Instalação /opt/ros/galactic/setup.bash
 Overlay - Workspace ~/ros2_study_ws
 
 Para criar um ambiente de trabalho(Workspace ou ws):
-```
+```sh
 mkdir -p ~/ros2_study_ws/src
 cd ~/ros2_study_ws
 ```
 
 Após criar o diretorio, os pacotes de trabalho devem ser adicionados ao diretorio src:
 obs: clonar repo git clone https://github.com/ros2/examples src/examples -b galactic
-```
+```sh
 .
 └── src
     └── examples
@@ -127,7 +129,7 @@ colcon build --symlink-install
 
 Após o build do workspace tera os seguintes diretorios
 
-```
+```sh
 .
 ├── build
 ├── install
@@ -138,7 +140,7 @@ Após o build do workspace tera os seguintes diretorios
 ```
 
 Ainda é possivel realizar o teste do ambiente.
-```
+```sh
 colcon test
 ```
 
@@ -147,7 +149,7 @@ colcon test
 "Muitas vezes, um nó precisa responder a alterações em seus próprios parâmetros ou nos parâmetros de outro nó. A classe ParameterEventHandler facilita a escuta de alterações de parâmetro para que seu código possa responder a elas. Este tutorial mostrará como usar a versão C++ da classe ParameterEventHandler para monitorar alterações nos parâmetros de um nó, bem como alterações nos parâmetros de outro nó."
 
 
-```
+```sh
 ros2 pkg create --build-type ament_cmake cpp_parameter_event_handler --dependencies rclcpp
 ```
 Arquivos criados/editados:
@@ -158,34 +160,34 @@ parameter_event_handler.cpp
 
 Primeira parte do tutorial
 Terminal 1
-```
+```sh
 ros2 run cpp_parameter_event_handler parameter_event_handler
 ```
 Terminal 2
-```
+```sh
 ros2 param set node_with_parameters an_int_param 43
 ```
 retorno 
-```
+```sh
 [INFO] [1606950498.422461764] [node_with_parameters]: cb: Received an update to parameter "an_int_param" of type integer: "43"
 ```  
 
 Segunda parte
 Terminal 1
-```
+```sh
 ros2 run cpp_parameter_event_handler parameter_event_handler
 ```
 Terminal 2
-```
+```sh
 ros2 run demo_nodes_cpp parameter_blackboard
 ```
 Terminal 3
-```
+```sh
 ros2 param set parameter_blackboard a_double_param 3.45
 ```
 
 Retorno
-```
+```sh
 [INFO] [1606952588.237531933] [node_with_parameters]: cb2: Received an update to parameter "a_double_param" of type: double: "3.45"
 ```
 
@@ -199,7 +201,7 @@ Arquivo criado no turorial
 src/ros_tutorials/launch/turtlesim_mimic_launch.py
 
 
-```
+```sh
 cd launch
 ros2 launch turtlesim_mimic_launch.py
 ```
@@ -207,12 +209,12 @@ ros2 launch turtlesim_mimic_launch.py
 O comando ira abrir duas instancias do turtlesim.
 
 No segundo terminal executar o comando abaixo:
-```
+```sh
 ros2 topic pub -r 1 /turtlesim1/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"
 ```
 
 Para visualizar a interligação entre nós basta rodar o comando:
-```
+```sh
 rqt_graph
 ```  
 
@@ -228,7 +230,7 @@ setup.py
 launch/my_script.launch.py
 
 
-```
+```sh
 ros2 launch my_package_py my_script.launch.py
 ```
 
@@ -242,12 +244,12 @@ ros2 launch my_package_py my_script.launch.py
  launch/example_substitutions.launch.py
 
 Terminal 1
-```
+```sh
 ros2 launch launch_tutorial example_substitutions.launch.py --show-args
 ```
 
 Terminal 2
-```
+```sh
 ros2 launch launch_tutorial example_substitutions.launch.py turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
 ```
 
@@ -259,7 +261,7 @@ ros2 launch launch_tutorial example_substitutions.launch.py turtlesim_ns:='turtl
 Para o tutorial foi criado o arquivo launch/tutorial/launch/example_event_handlers.launch.py
 
 Executando o launch
-```
+```sh
 ros2 launch launch_tutorial example_event_handlers.launch.py turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
 ```
 Passos executados pelo launch
@@ -323,32 +325,96 @@ sudo apt install ros-galactic-turtle-tf2-py
 "Objetivo: Executar uma demonstração do turtlesim e ver um pouco do poder do tf2 em um exemplo multi-robô usando o turtlesim."
 
 Para este tutorial o pacote a seguir deve ser instalado:
-```
+```sh
 sudo apt-get install ros-galactic-turtle-tf2-py ros-galactic-tf2-tools ros-galactic-tf-transformations
 ```
 
-```
+```sh
 pip3 install transforms3d
 ```
 tf2 tools
 
 1 Using view_frames
-```
+```sh
 ros2 run tf2_tools view_frames
 ```
 
 2 Using tf2_echo
-```
+```sh
 ros2 run tf2_ros tf2_echo turtle2 turtle1
 ```
 
 rviz and tf2
-```
+```sh
 ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
-``
+```
 
-[Writing a tf2 static broadcaster]() 
+[Writing a tf2 static broadcaster](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Py.html) 
 - Python 
+
+Pacote utilizado no tutorial
+```sh
+ros2 pkg create --build-type ament_python learning_tf2_py
+```
+
+Arquivos criados no tutorial:
+learning_tf2_py/learning_tf2_py/static_turtle_tf2_broadcaster.py
+
+Terminal 1
+```sh
+ros2 run learning_tf2_py static_turtle_tf2_broadcaster mystaticturtle 0 0 1 0 0 0
+```
+
+Terminal 2
+```
+ros2 topic echo --qos-reliability reliable --qos-durability transient_local /tf_static
+```
+Retorna
+```sh
+transforms:
+- header:
+   stamp:
+      sec: 1622908754
+      nanosec: 208515730
+   frame_id: world
+child_frame_id: mystaticturtle
+transform:
+   translation:
+      x: 0.0
+      y: 0.0
+      z: 1.0
+   rotation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+```
+
+Pesar de ser possivel escrever o porpio codigo para trabalhar com transformadas, é sugerido que seja utlizado o comando apropiado para isso:
+
+```sh
+ros2 run tf2_ros static_transform_publisher x y z yaw pitch roll frame_id child_frame_id
+```
+ou
+```sh
+ros2 run tf2_ros static_transform_publisher x y z yaw pitch roll frame_id child_frame_id
+```
+
+Para adicionar esse comando a um arquivo de launch:
+```py
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+   return LaunchDescription([
+      Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments = ['0', '0', '1', '0', '0', '0', 'world', 'mystaticturtle']
+      ),
+   ])
+```
+
 - C++
 
 [Writing a tf2 broadcaster]()

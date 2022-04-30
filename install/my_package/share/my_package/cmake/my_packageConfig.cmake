@@ -1,1 +1,1 @@
-/home/ist/ros2_study_ws/build/my_package/ament_cmake_core/my_packageConfig.cmake
+/home/dayvson/ros2_study_ws/build/my_package/ament_cmake_core/my_packageConfig.cmake
