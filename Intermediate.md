@@ -349,8 +349,8 @@ rviz and tf2
 ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
 ```
 
-[Writing a tf2 static broadcaster](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Py.html) 
-- Python 
+[Writing a tf2 static broadcaster]() 
+- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Py.html)
 
 Pacote utilizado no tutorial
 ```sh
@@ -418,7 +418,10 @@ def generate_launch_description():
 - C++
 
 [Writing a tf2 broadcaster]()
-- Python  
+- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)  
+
+
+
 - C++
     
 [Writing a tf2 listener.]()
