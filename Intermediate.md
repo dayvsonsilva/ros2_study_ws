@@ -320,7 +320,7 @@ sudo apt install ros-galactic-turtle-tf2-py
 
 - [ ] Learning tf2   
 
-[Introduction to tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Introduction-To-Tf2.html)
+[1. Introduction to tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Introduction-To-Tf2.html)
 
 "Objetivo: Executar uma demonstração do turtlesim e ver um pouco do poder do tf2 em um exemplo multi-robô usando o turtlesim."
 
@@ -349,7 +349,7 @@ rviz and tf2
 ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
 ```
 
-[Writing a tf2 static broadcaster]() 
+[2. Writing a tf2 static broadcaster]() 
 - [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Py.html)
 
 Pacote utilizado no tutorial
@@ -417,26 +417,56 @@ def generate_launch_description():
 
 - C++
 
-[Writing a tf2 broadcaster]()
+[3. Writing a tf2 broadcaster]()
 - [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)  
 
+"Nos próximos dois tutoriais, escreveremos o código para reproduzir a demonstração do tutorial Introdução ao tf2. Depois disso, os tutoriais a seguir se concentram em estender a demonstração com recursos tf2 mais avançados, incluindo o uso de tempos limite em pesquisas de transformação e viagens no tempo."  
 
 
+Arquivos criados no tutorial:
+learning_tf2_py/learning_tf2_py/turtle_tf2_broadcaster.py
+learning_tf2_py/launch/turtle_tf2_demo.launch.py
+
+Update:
+setup.py
+package.xml
+
+Rodar tutorial
+Terminal 1
+```sh
+ros2 launch learning_tf2_py turtle_tf2_demo.launch.py
+``` 
+
+Terminal 2
+```
+ros2 run turtlesim turtle_teleop_key
+```   
+Terminal 3
+```
+ros2 run tf2_ros tf2_echo world turtle1
+```
+
+Resposta:
+```sh
+At time 1651597783.967794171
+- Translation: [6.971, 6.643, 0.000]
+- Rotation: in Quaternion [0.000, 0.000, -0.774, 0.633]
+```
 - C++
     
-[Writing a tf2 listener.]()
+[4. Writing a tf2 listener.]()
 - Python  
 - C++
 
-[Adding a frame]()  
+[5. Adding a frame]()  
 - Python  
 - C++
 
-[Learning about tf2 and time]()
+[6. Learning about tf2 and time]()
 - Python  
 - C++
 
-[Time travel with tf2.]()
+[7. Time travel with tf2.]()
 - Python  
 - C++
 

@@ -132,15 +132,15 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
   - [x] Launching and Monitor Multiple Nodes with Launch.
   - [x] Using Substitutions.
   - [x] Using Event Handlers.
-  - [X] Using ROS 2 Launch For Large Projects.
+  - [x] Using ROS 2 Launch For Large Projects.
 - [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Tf2/Tf2-Main.html)
   - [ ] Learning tf2   
-    - [X] Introduction to tf2.
+    - [x] Introduction to tf2.
     - [ ] Writing a tf2 static broadcaster 
       - [x] (Python) 
       - [ ] (C++)
     - [ ] Writing a tf2 broadcaster
-      - [ ] (Python) 
+      - [x] (Python) 
       - [ ] (C++)
     - [ ] Writing a tf2 listener.
       - [ ] (Python) 
