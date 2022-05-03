@@ -143,7 +143,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
       - [x] (Python) 
       - [ ] (C++)
     - [ ] Writing a tf2 listener.
-      - [ ] (Python) 
+      - [x] (Python) 
       - [ ] (C++)
     - [ ] Adding a frame  
       - [ ] (Python) 
@@ -217,9 +217,3 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 ## Referências
 
 - [Documentação ROS Galatic](http://docs.ros.org/en/galactic/index.html)
-
-
-file 'launch_turtlesim.launch.py' was found more than once in the share directory of package 
-
-'launch_tutorial': ['/home/ist/ros2_study_ws/install/launch_tutorial/share/launch_tutorial/launch_turtlesim.launch.py',   
-                    '/home/ist/ros2_study_ws/install/launch_tutorial/share/launch_tutorial/launch/launch_turtlesim.launch.py']

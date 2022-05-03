@@ -456,6 +456,32 @@ At time 1651597783.967794171
     
 [4. Writing a tf2 listener.]()
 - Python  
+
+Arquivos criados no tutorial:
+learning_tf2_py/learning_tf2_py/turtle_tf2_listener.py
+
+Update:
+setup.py
+package.xml
+
+Adicionar a linha a seguir no arquivo setup.py:
+```py
+'console_scripts': [
+...
+'turtle_tf2_listener = learning_tf2_py.turtle_tf2_listener:main',
+...
+],
+```
+
+Terminal 1
+```sh
+ros2 launch learning_tf2_py turtle_tf2_demo.launch.py
+```
+Terminal 2
+```
+ros2 run turtlesim turtle_teleop_key
+```
+
 - C++
 
 [5. Adding a frame]()  
