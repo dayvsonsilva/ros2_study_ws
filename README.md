@@ -146,7 +146,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
       - [x] (Python) 
       - [ ] (C++)
     - [ ] Adding a frame  
-      - [ ] (Python) 
+      - [x] (Python) 
       - [ ] (C++)
     - [ ] Learning about tf2 and time (Python) (C++).
       - [ ] (Python) 

@@ -454,8 +454,8 @@ At time 1651597783.967794171
 ```
 - C++
     
-[4. Writing a tf2 listener.]()
-- Python  
+[4. Writing a tf2 listener.](docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)
+- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html) 
 
 Arquivos criados no tutorial:
 learning_tf2_py/learning_tf2_py/turtle_tf2_listener.py
@@ -484,8 +484,29 @@ ros2 run turtlesim turtle_teleop_key
 
 - C++
 
-[5. Adding a frame]()  
+[5. Adding a frame](http://docs.ros.org/en/galactic/Tutorials/Tf2/Adding-A-Frame-Py.html)  
 - Python  
+
+Arquivos criados no tutorial:
+learning_tf2_py/learning_tf2_py/fixed_frame_tf2_broadcaster.py
+learning_tf2_py/launch/turtle_tf2_dynamic_frame_demo.launch.py
+
+Formatos para envio de argumentos 
+
+1 - Via terminal: 
+```sh
+ros2 launch learning_tf2_py turtle_tf2_fixed_frame_demo.launch.py **target_frame:=carrot1**
+```
+
+2 - Via launch file:
+```py
+def generate_launch_description():
+   demo_nodes = IncludeLaunchDescription(
+      ...,
+      launch_arguments={'target_frame': 'carrot1'}.items(),
+      )
+```
+
 - C++
 
 [6. Learning about tf2 and time]()
