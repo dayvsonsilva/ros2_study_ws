@@ -24,10 +24,12 @@ Para melhor aproveitamento dos tutoriais é importante que se tenha conhecimento
 ## Preparação do Ambiente
  
 ### Instalação do ROS2 Galactic via pacotes Debian
-<div style="text-align: justify"> 
-A documentação original aborda formatos diferentes de instalação, incluindo instalação em vários sistemas operacionais. Para os estudos é sugerido utilizar a instalação via pacotes debian pela facilidade, visto que no primeiro momento o foco é o estudos dos pacotes ROS2 disponíveis para diversas aplicações, em casos onde o ROS2 será utilizado em uma versão do Linux que não tenha suporte nativo será necessário revisitar a página oficial da documentação do [ROS2 Galatic - Installation](http://docs.ros.org/en/galactic/Installation.html#installation). 
- 
+<div style="text-align: justify">  
+
+A documentação original aborda formatos diferentes de instalação, incluindo instalação em vários sistemas operacionais. Para os estudos é sugerido utilizar a instalação via pacotes debian pela facilidade, visto que no primeiro momento o foco é o estudos dos pacotes ROS2 disponíveis para diversas aplicações, em casos onde o ROS2 será utilizado em uma versão do Linux que não tenha suporte nativo será necessário revisitar a página oficial da documentação do [ROS2 Galatic Installation](http://docs.ros.org/en/galactic/Installation.html#installation).
+
 O bloco de codigo abaixo tras um resumo com os comando para instalação do ROS 2 Galactic, para entender o passo-a-passo da instalação é sugerido que seja realizado uma visita a pagina [Installing ROS 2 via Debian Packages](http://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#installing-ros-2-via-debian-packages) 
+
 </div>  
 
 ```shell  

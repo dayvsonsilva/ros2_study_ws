@@ -510,7 +510,14 @@ def generate_launch_description():
 - C++
 
 [6. Learning about tf2 and time]()
-- Python  
+
+- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Learning-About-Tf2-And-Time-Py.html)  
+
+OBS: No tutorial pede pra remover "timeout=Duration(seconds=1.0)" porem não existe no arquivo "turtle_tf2_listner.py".
+
+
+
+
 - C++
 
 [7. Time travel with tf2.]()
