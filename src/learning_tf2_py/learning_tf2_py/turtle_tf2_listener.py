@@ -56,7 +56,8 @@ class FrameListener(Node):
                     trans = self.tf_buffer.lookup_transform(
                         to_frame_rel,
                         from_frame_rel,
-                        now)
+                        now,
+                        timeout=Duration(seconds=1.0))
                 except TransformException as ex:
                     self.get_logger().info(
                         f'Could not transform {to_frame_rel} to {from_frame_rel}: {ex}')

@@ -138,9 +138,9 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Tf2/Tf2-Main.html)
   - [ ] Learning tf2   
     - [x] Introduction to tf2.
-    - [ ] Writing a tf2 static broadcaster 
+    - [x] Writing a tf2 static broadcaster 
       - [x] (Python) 
-      - [ ] (C++)
+      - [x] (C++)
     - [ ] Writing a tf2 broadcaster
       - [x] (Python) 
       - [ ] (C++)
@@ -151,8 +151,8 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
       - [x] (Python) 
       - [ ] (C++)
     - [ ] Learning about tf2 and time (Python) (C++).
-      - [ ] (Python) 
-      - [ ] (C++)
+      - [ ] (Python) **REFAZER**
+      - [ ] (C++) 
     - [ ] Time travel with tf2.
       - [ ] (Python) 
       - [ ] (C++)

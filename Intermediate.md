@@ -415,7 +415,17 @@ def generate_launch_description():
    ])
 ```
 
-- C++
+- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Cpp.html)
+
+Pacote utilizado no tutorial
+```sh
+ros2 pkg create --build-type ament_cmake learning_tf2_cpp
+```
+
+Arquivos criados no tutorial:
+src/static_turtle_tf2_broadcaster.cpp
+
+
 
 [3. Writing a tf2 broadcaster]()
 - [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)  
@@ -521,7 +531,12 @@ OBS: No tutorial pede pra remover "timeout=Duration(seconds=1.0)" porem não exi
 - C++
 
 [7. Time travel with tf2.]()
-- Python  
+- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Time-Travel-With-Tf2-Py.html)  
+
+"No tutorial anterior, discutimos os conceitos básicos de tf2 e tempo. Este tutorial nos levará um passo adiante e exporá um poderoso truque do tf2: a viagem no tempo. Em suma, uma das principais características da biblioteca tf2 é que ela é capaz de transformar dados no tempo e no espaço.
+
+Esse recurso de viagem no tempo do tf2 pode ser útil para várias tarefas, como monitorar a pose do robô por um longo período de tempo ou construir um robô seguidor que seguirá os “passos” do líder. Usaremos esse recurso de viagem no tempo para procurar transformações de volta no tempo e programar turtle2 para seguir 5 segundos atrás de cenoura1."
+
 - C++
 
 [Debugging tf2]()
