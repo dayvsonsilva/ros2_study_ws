@@ -141,9 +141,9 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
     - [x] Writing a tf2 static broadcaster 
       - [x] (Python) 
       - [x] (C++)
-    - [ ] Writing a tf2 broadcaster
+    - [x] Writing a tf2 broadcaster
       - [x] (Python) 
-      - [ ] (C++)
+      - [x] (C++)
     - [ ] Writing a tf2 listener.
       - [x] (Python) 
       - [ ] (C++)
