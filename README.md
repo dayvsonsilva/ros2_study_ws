@@ -1,8 +1,5 @@
----
-TOCTitle: Markdown
----
 <!-- cSpell:enable -->
-# ros2_study
+# ros2_study(Em construção)
 
 ## Introdução
 <div style="text-align: justify"> 
@@ -144,12 +141,12 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
     - [x] Writing a tf2 broadcaster
       - [x] (Python) 
       - [x] (C++)
-    - [ ] Writing a tf2 listener.
+    - [x] Writing a tf2 listener.
       - [x] (Python) 
-      - [ ] (C++)
-    - [ ] Adding a frame  
+      - [x] (C++)
+    - [x] Adding a frame  
       - [x] (Python) 
-      - [ ] (C++)
+      - [x] (C++)
     - [ ] Learning about tf2 and time (Python) (C++).
       - [ ] (Python) **REFAZER**
       - [ ] (C++) 
