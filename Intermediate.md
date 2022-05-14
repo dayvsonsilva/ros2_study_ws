@@ -608,12 +608,30 @@ ros2 launch learning_tf2_cpp turtle_tf2_dynamic_frame_demo.launch.py
 
 - [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Learning-About-Tf2-And-Time-Py.html)  
 
-OBS: No tutorial pede pra remover "timeout=Duration(seconds=1.0)" porem não existe no arquivo "turtle_tf2_listener.py".
+"Nos tutoriais anteriores, recriamos a demonstração da tartaruga escrevendo um transmissor tf2 e um ouvinte tf2. Também aprendemos como adicionar um novo quadro à árvore de transformação. Agora vamos aprender mais sobre o argumento timeout que faz o lookup_transform esperar pela transformação especificada até a duração especificada antes de lançar uma exceção. Essa ferramenta pode ser útil para ouvir transformações publicadas em taxas variadas ou fontes de entrada com rede não confiável e latência não desprezível. Este tutorial ensinará como usar o timeout na função lookup_transform para esperar que uma transformação esteja disponível na árvore tf2"
 
+Arquivos editados no tutorial:
+src/learning_tf2_py/learning_tf2_py/turtle_tf2_listener.py
 
+Para correto funcionamento foi nescessario adicionar a linha 
+```python
+from rclpy.duration import Duration
+```
 
+Executando o tutorial
+Terminal 1
+```
+ros2 launch learning_tf2_py turtle_tf2_demo.launch.py
+```
 
-- C++
+Terminal 2
+```sh
+ros2 run turtlesim turtle_teleop_key
+```
+
+A tartatura 2 tera a posição da tartaruga 1 um segundo atrás como referencia de posicionamentos. 
+
+- [C++]()
 
 [7. Time travel with tf2.]()
 - [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Time-Travel-With-Tf2-Py.html)  
