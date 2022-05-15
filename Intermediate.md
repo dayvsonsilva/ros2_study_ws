@@ -657,7 +657,21 @@ ros2 run turtlesim turtle_teleop_key
 
 Esse recurso de viagem no tempo do tf2 pode ser útil para várias tarefas, como monitorar a pose do robô por um longo período de tempo ou construir um robô seguidor que seguirá os “passos” do líder. Usaremos esse recurso de viagem no tempo para procurar transformações de volta no tempo e programar turtle2 para seguir 5 segundos atrás de cenoura1."
 
-- C++
+Arquivos editados no tutorial:
+src/learning_tf2_py/learning_tf2_py/turtle_tf2_listener.py
+
+
+Terminal 1
+```sh
+ros2 launch learning_tf2_py turtle_tf2_fixed_frame_demo.launch.py
+```
+
+Terminal 2
+```sh
+ros2 run turtlesim turtle_teleop_key
+```
+
+- [C++]()
 
 [Debugging tf2]()
 - [ ] Quaternion fundamentals.

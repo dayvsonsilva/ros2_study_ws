@@ -151,7 +151,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
       - [x] (Python)
       - [x] (C++) 
     - [ ] Time travel with tf2.
-      - [ ] (Python) 
+      - [x] (Python) 
       - [ ] (C++)
   - [ ] Debugging tf2
     - [ ] Quaternion fundamentals.
