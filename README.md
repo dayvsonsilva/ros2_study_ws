@@ -150,9 +150,9 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
     - [x] Learning about tf2 and time
       - [x] (Python)
       - [x] (C++) 
-    - [ ] Time travel with tf2.
+    - [x] Time travel with tf2.
       - [x] (Python) 
-      - [ ] (C++)
+      - [x] (C++)
   - [ ] Debugging tf2
     - [ ] Quaternion fundamentals.
     - [ ] Debugging tf2 problems.
