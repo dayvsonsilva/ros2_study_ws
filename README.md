@@ -133,7 +133,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
   - [x] Using Event Handlers.
   - [x] Using ROS 2 Launch For Large Projects.
 - [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Tf2/Tf2-Main.html)
-  - [ ] Learning tf2   
+  - [x] Learning tf2   
     - [x] Introduction to tf2.
     - [x] Writing a tf2 static broadcaster 
       - [x] (Python) 
