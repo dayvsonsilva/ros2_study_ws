@@ -687,10 +687,32 @@ Terminal 2
 ros2 run turtlesim turtle_teleop_key
 ```
 
-[Debugging tf2]()
-- [ ] Quaternion fundamentals.
-- [ ] Debugging tf2 problems.
+[Debugging tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Debugging-Tf2-Problems.html)
 
-[Using sensor messages with tf2]()
+- [Quaternion fundamentals.](http://docs.ros.org/en/galactic/Tutorials/Tf2/Quaternion-Fundamentals.html)
+
+
+"Um quaternion é uma representação de orientação de 4 tuplas(tradução errada, provavelmente tratase de tupla de 4 posições), que é mais concisa do que uma matriz de rotação. Os quatérnions são muito eficientes para analisar situações em que estão envolvidas rotações em três dimensões. Quaternions são amplamente utilizados em robótica, mecânica quântica, visão computacional e animação 3D."
+
+Instalando tf_transformations
+```
+sudo apt-get install ros-galactic-tf-transformations
+```
+
+Codigo da biblioteca [tf_transformations](https://github.com/DLu/tf_transformations).
+
+
+Referêsncias externas
+[A Sutileza dos Quatérnions no Movimento de Rotação de Corpos Rígidos](https://www.scielo.br/j/rbef/a/XvBQPp9F5SsWwQCTGX9pk5C/abstract/?lang=pt)
+
+(O que são números Quaternions?)[https://www.youtube.com/watch?v=8WeatzzMT_A]
+(Dinâmica de Sistemas Mecânicos, Professor Samuel da Silva
+)[https://www.youtube.com/watch?v=x4GhXt7yvks&list=PLHtj55JNGdtmqJUZud-Vsdc68Q4Ez21By]
+
+
+
+- [Debugging tf2 problems.](http://docs.ros.org/en/galactic/Tutorials/Tf2/Debugging-Tf2-Problems.html)
+
+[Using sensor messages with tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Using-Stamped-Datatypes-With-Tf2-Ros-MessageFilter.html)
 
 [URDF Tutorials]()  

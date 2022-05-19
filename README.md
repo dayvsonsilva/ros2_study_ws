@@ -154,7 +154,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
       - [x] (Python) 
       - [x] (C++)
   - [ ] Debugging tf2
-    - [ ] Quaternion fundamentals.
+    - [x] Quaternion fundamentals.
     - [ ] Debugging tf2 problems.
   - [ ] Using sensor messages with tf2
 - [ ] URDF Tutorials
@@ -216,3 +216,6 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 ## Referências
 
 - [Documentação ROS Galatic](http://docs.ros.org/en/galactic/index.html)
+- [A Sutileza dos Quatérnions no Movimento de Rotação de Corpos Rígidos](https://www.scielo.br/j/rbef/a/XvBQPp9F5SsWwQCTGX9pk5C/abstract/?lang=pt)
+- [O que são números Quaternions?](https://www.youtube.com/watch?v=8WeatzzMT_A)
+- [Dinâmica de Sistemas Mecânicos, Professor Samuel da Silva](https://www.youtube.com/watch?v=x4GhXt7yvks&list=PLHtj55JNGdtmqJUZud-Vsdc68Q4Ez21By)
