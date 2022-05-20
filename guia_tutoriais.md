@@ -1,5 +1,3 @@
-### Beginner
-
 [Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools)
 
 - [ ] Configuring your ROS 2 environment  

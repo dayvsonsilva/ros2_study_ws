@@ -713,6 +713,18 @@ Referêsncias externas
 
 - [Debugging tf2 problems.](http://docs.ros.org/en/galactic/Tutorials/Tf2/Debugging-Tf2-Problems.html)
 
+
+
+No tutorial cita a linha
+```cpp
+std::string to_frame_rel = "turtle2";
+```
+Porem no codigo esta escrito:
+```cpp
+std::string toFrameRel = "turtle2";
+```
+
+
 [Using sensor messages with tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Using-Stamped-Datatypes-With-Tf2-Ros-MessageFilter.html)
 
 [URDF Tutorials]()  
