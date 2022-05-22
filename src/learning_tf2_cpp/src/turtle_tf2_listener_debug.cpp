@@ -50,7 +50,7 @@ private:
     // Store frame names in variables that will be used to
     // compute transformations
     std::string fromFrameRel = target_frame_.c_str();
-    std::string toFrameRel = "turtle2";
+    std::string toFrameRel = "turtle3";
 
     if (turtle_spawning_service_ready_)
     {
@@ -62,6 +62,8 @@ private:
         // and send velocity commands for turtle2 to reach target_frame
         try
         {
+          rclcpp::Time now = this->get_clock()->now(); // add Learning about tf2 and time (C++)
+
           transformStamped = tf_buffer_->lookupTransform(
               toFrameRel,
               fromFrameRel,

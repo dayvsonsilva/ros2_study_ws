@@ -123,7 +123,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Creating an action  
 - [x] Writing an action server and client (C++)  
 - [x] Writing an action server and client (Python)  
-- [ ] Composing multiple nodes in a single process  REFAZER
+- [ ] Composing multiple nodes in a single process  **REFAZER**
 - [x] Using colcon to build packages  
 - [x] Monitoring for parameter changes (C++)  
 - [x] [Launch Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)  
@@ -155,9 +155,9 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
       - [x] (C++)
   - [ ] Debugging tf2
     - [x] Quaternion fundamentals.
-    - [ ] Debugging tf2 problems.
-  - [ ] Using sensor messages with tf2
-- [ ] URDF Tutorials
+    - [ ] Debugging tf2 problems.**REFAZER**
+  - [ ] Using sensor messages with tf2 **REFAZER**
+- [ ] [URDF Tutorials](http://docs.ros.org/en/galactic/Tutorials/URDF/URDF-Main.html)
   - [ ] Building a Visual Robot Model with URDF from Scratch
   - [ ] Building a Movable Robot Model with URDF
   - [ ] Adding Physical and Collision Properties to a URDF Model
