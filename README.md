@@ -5,7 +5,7 @@
 <div style="text-align: justify"> 
 <!-- De acordo com a própria documentação, o Robot Operating System(ROS) é um conjunto de bibliotecas e ferramentas para construir aplicações com robôs. Desde drives até algoritmos no estado da arte, e possui poderosas ferramentas de desenvolvimento, o ROS tem o que é preciso para projetos de robótica. E é tudo código aberto. -->
  
-Repositório com registros e códigos de tutoriais realizados seguindo a documentação do ROS2 Galactic. Durante os estudos foi utilizado o SO Ubuntu 20.04. 
+Repositório com registros e códigos de tutoriais realizados seguindo a documentação do ROS2 humble. Durante os estudos foi utilizado o SO Ubuntu 20.04. 
  
 O objetivo deste repositório é registrar informações importantes e ou códigos em formato original ou modificados, sendo exclusivamente para uso próprio e didático, não sendo recomendado a utilização de seus códigos e informações para aplicações que possam vir a gerar prejuízos de qualquer natureza.
 </div>
@@ -20,12 +20,12 @@ Para melhor aproveitamento dos tutoriais é importante que se tenha conhecimento
 
 ## Preparação do Ambiente
  
-### Instalação do ROS2 Galactic via pacotes Debian
+### Instalação do ROS2 humble via pacotes Debian
 <div style="text-align: justify">  
 
-A documentação original aborda formatos diferentes de instalação, incluindo instalação em vários sistemas operacionais. Para os estudos é sugerido utilizar a instalação via pacotes debian pela facilidade, visto que no primeiro momento o foco é o estudos dos pacotes ROS2 disponíveis para diversas aplicações, em casos onde o ROS2 será utilizado em uma versão do Linux que não tenha suporte nativo será necessário revisitar a página oficial da documentação do [ROS2 Galatic Installation](http://docs.ros.org/en/galactic/Installation.html#installation).
+A documentação original aborda formatos diferentes de instalação, incluindo instalação em vários sistemas operacionais. Para os estudos é sugerido utilizar a instalação via pacotes debian pela facilidade, visto que no primeiro momento o foco é o estudos dos pacotes ROS2 disponíveis para diversas aplicações, em casos onde o ROS2 será utilizado em uma versão do Linux que não tenha suporte nativo será necessário revisitar a página oficial da documentação do [ROS2 Galatic Installation](http://docs.ros.org/en/humble/Installation.html#installation).
 
-O bloco de codigo abaixo tras um resumo com os comando para instalação do ROS 2 Galactic, para entender o passo-a-passo da instalação é sugerido que seja realizado uma visita a pagina [Installing ROS 2 via Debian Packages](http://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#installing-ros-2-via-debian-packages) 
+O bloco de codigo abaixo tras um resumo com os comando para instalação do ROS 2 humble, para entender o passo-a-passo da instalação é sugerido que seja realizado uma visita a pagina [Installing ROS 2 via Debian Packages](http://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#installing-ros-2-via-debian-packages) 
 
 </div>  
 
@@ -59,18 +59,18 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 Instalando os Pacotes do ROS2  
 ```shell
 sudo apt update
-sudo apt install ros-galactic-desktop
+sudo apt install ros-humble-desktop
 ```
 
 Após a instalação é recomendado realizar o teste do ROS2 através da execução dos comandos abaixo.
 
 ```shell
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
 ```shell
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_py listener
 ```
 
@@ -83,7 +83,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 ### Beginner
 
-[Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools) <!--10-->
+[Beginner: CLI Tools](http://docs.ros.org/en/humble/Tutorials.html#beginner-cli-tools) <!--10-->
 
 - [x] Configuring your ROS 2 environment  
 - [x] Introducing turtlesim and rqt  
@@ -97,7 +97,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [x] Recording and playing back data  
 
 
-[Beginner: Client Libraries](http://docs.ros.org/en/galactic/Tutorials.html#beginner-client-libraries) <!--16-->
+[Beginner: Client Libraries](http://docs.ros.org/en/humble/Tutorials.html#beginner-client-libraries) <!--16-->
 
 - [x] Creating a workspace  
 - [x] Creating your first ROS 2 package  
@@ -118,7 +118,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 
 ### Intermediate
-[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--32-->
+[Intermediate](http://docs.ros.org/en/humble/Tutorials.html#intermediate) <!--32-->
 
 - [x] Creating an action  
 - [x] Writing an action server and client (C++)  
@@ -126,13 +126,13 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Composing multiple nodes in a single process  **REFAZER**
 - [x] Using colcon to build packages  
 - [x] Monitoring for parameter changes (C++)  
-- [x] [Launch Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)  
+- [x] [Launch Tutorials](http://docs.ros.org/en/humble/Tutorials/Launch/Launch-Main.html)  
   - [x] Creating a ROS 2 Launch File.
   - [x] Launching and Monitor Multiple Nodes with Launch.
   - [x] Using Substitutions.
   - [x] Using Event Handlers.
   - [x] Using ROS 2 Launch For Large Projects.
-- [ ] [tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Tf2/Tf2-Main.html)
+- [ ] [tf2 Tutorials](http://docs.ros.org/en/humble/Tutorials/Tf2/Tf2-Main.html)
   - [x] Learning tf2   
     - [x] Introduction to tf2.
     - [x] Writing a tf2 static broadcaster 
@@ -157,7 +157,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
     - [x] Quaternion fundamentals.
     - [ ] Debugging tf2 problems.**REFAZER**
   - [ ] Using sensor messages with tf2 **REFAZER**
-- [ ] [URDF Tutorials](http://docs.ros.org/en/galactic/Tutorials/URDF/URDF-Main.html)
+- [ ] [URDF Tutorials](http://docs.ros.org/en/humble/Tutorials/URDF/URDF-Main.html)
   - [ ] Building a Visual Robot Model with URDF from Scratch
   - [ ] Building a Movable Robot Model with URDF
   - [ ] Adding Physical and Collision Properties to a URDF Model
@@ -165,7 +165,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
   - [ ] Using URDF with robot_state_publisher
 
 ### Advanced
-[Advanced](http://docs.ros.org/en/galactic/Tutorials.html#intermediate) <!--6-->
+[Advanced](http://docs.ros.org/en/humble/Tutorials.html#intermediate) <!--6-->
 
 - [ ] ROS 2 Topic Statistics Tutorial (C++)  
 - [ ] Using Fast DDS Discovery Server as discovery protocol [community-contributed]  
@@ -175,12 +175,12 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Recording a bag from your own node (Python)  
 
 ### Simulation
-[Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)<!--1-->
+[Simulation](http://docs.ros.org/en/humble/Tutorials.html#intermediate)<!--1-->
 
 - [ ] Simulation Tutorials  
 
 ### Miscellaneous
-[Miscellaneous](http://docs.ros.org/en/galactic/Tutorials.html#miscellaneous) <!--4-->
+[Miscellaneous](http://docs.ros.org/en/humble/Tutorials.html#miscellaneous) <!--4-->
 
 - [ ] ROS2 on IBM Cloud Kubernetes [community-contributed]  
 - [ ] Eclipse Oxygen with ROS 2 and rviz2 [community-contributed]  
@@ -189,7 +189,7 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 
 
 ### Demos<!--15-->
-[Demos](http://docs.ros.org/en/galactic/Tutorials.html#demos)
+[Demos](http://docs.ros.org/en/humble/Tutorials.html#demos)
 
 - [ ] Use quality-of-service settings to handle lossy networks.  
 - [ ] Management of nodes with managed lifecycles.  
@@ -208,14 +208,14 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
 - [ ] Logging and logger configuration.  
 
 ### Examples <!--1-->
-[Examples](http://docs.ros.org/en/galactic/Tutorials.html#examples) 
+[Examples](http://docs.ros.org/en/humble/Tutorials.html#examples) 
 
 - [ ] Python and C++ minimal examples.  
 
 
 ## Referências
 
-- [Documentação ROS Galatic](http://docs.ros.org/en/galactic/index.html)
+- [Documentação ROS Galatic](http://docs.ros.org/en/humble/index.html)
 - [A Sutileza dos Quatérnions no Movimento de Rotação de Corpos Rígidos](https://www.scielo.br/j/rbef/a/XvBQPp9F5SsWwQCTGX9pk5C/abstract/?lang=pt)
 - [O que são números Quaternions?](https://www.youtube.com/watch?v=8WeatzzMT_A)
 - [Dinâmica de Sistemas Mecânicos, Professor Samuel da Silva](https://www.youtube.com/watch?v=x4GhXt7yvks&list=PLHtj55JNGdtmqJUZud-Vsdc68Q4Ez21By)

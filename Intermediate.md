@@ -1,7 +1,7 @@
 # Anotações: Intermediate
 
 
-[Creating an action](http://docs.ros.org/en/galactic/Tutorials/Actions/Creating-an-Action.html)  
+[Creating an action](http://docs.ros.org/en/humble/Tutorials/Actions/Creating-an-Action.html)  
 
 "Você aprendeu sobre ações anteriormente no tutorial Entendendo as ações do ROS 2. Assim como os outros tipos de comunicação e suas respectivas interfaces (tópicos/msg e serviços/srv), você também pode definir ações personalizadas em seus pacotes. Este tutorial mostra como definir e construir uma ação que você pode usar com o servidor de ação e o cliente de ação que você escreverá no próximo tutorial."
 
@@ -21,7 +21,7 @@ CMakeLists.txt
 package.xml
 
 
-[Writing an action server and client (C++)](http://docs.ros.org/en/galactic/Tutorials/Actions/Writing-a-Cpp-Action-Server-Client.html)  
+[Writing an action server and client (C++)](http://docs.ros.org/en/humble/Tutorials/Actions/Writing-a-Cpp-Action-Server-Client.html)  
 
 "As ações são uma forma de comunicação assíncrona no ROS. Os clientes de ação enviam solicitações de meta para servidores de ação. Os servidores de ação enviam feedback de metas e resultados para clientes de ação.
 "
@@ -50,7 +50,7 @@ ros2 run action_tutorials_cpp fibonacci_action_client
 
 
 
-[Writing an action server and client (Python)](http://docs.ros.org/en/galactic/Tutorials/Actions/Writing-a-Py-Action-Server-Client.html)  
+[Writing an action server and client (Python)](http://docs.ros.org/en/humble/Tutorials/Actions/Writing-a-Py-Action-Server-Client.html)  
 
 "As ações são uma forma de comunicação assíncrona no ROS 2. Clientes de ação enviam solicitações de meta para servidores de ação. Os servidores de ação enviam feedback de metas e resultados para clientes de ação."
 
@@ -74,7 +74,7 @@ Na primeira etapa do tutorial é abordado um formato mais simples do server e cl
 
 
 
-[Composing multiple nodes in a single process](http://docs.ros.org/en/galactic/Tutorials/Composition.html)  REFAZER
+[Composing multiple nodes in a single process](http://docs.ros.org/en/humble/Tutorials/Composition.html)  REFAZER
 
 "Para ver quais componentes estão registrados e disponíveis no espaço de trabalho, execute o seguinte em um shell:"
 
@@ -94,10 +94,10 @@ composition
 (... components of other packages here)
 ```  
 
-[Using colcon to build packages](http://docs.ros.org/en/galactic/Tutorials/Colcon-Tutorial.html)  
+[Using colcon to build packages](http://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html)  
 
 
-Underlay - Instalação /opt/ros/galactic/setup.bash  
+Underlay - Instalação /opt/ros/humble/setup.bash  
 Overlay - Workspace ~/ros2_study_ws
 
 Para criar um ambiente de trabalho(Workspace ou ws):
@@ -107,7 +107,7 @@ cd ~/ros2_study_ws
 ```
 
 Após criar o diretorio, os pacotes de trabalho devem ser adicionados ao diretorio src:
-obs: clonar repo git clone https://github.com/ros2/examples src/examples -b galactic
+obs: clonar repo git clone https://github.com/ros2/examples src/examples -b humble
 ```sh
 .
 └── src
@@ -144,7 +144,7 @@ Ainda é possivel realizar o teste do ambiente.
 colcon test
 ```
 
-[Monitoring for parameter changes (C++)](http://docs.ros.org/en/galactic/Tutorials/Monitoring-For-Parameter-Changes-CPP.html)  
+[Monitoring for parameter changes (C++)](http://docs.ros.org/en/humble/Tutorials/Monitoring-For-Parameter-Changes-CPP.html)  
 
 "Muitas vezes, um nó precisa responder a alterações em seus próprios parâmetros ou nos parâmetros de outro nó. A classe ParameterEventHandler facilita a escuta de alterações de parâmetro para que seu código possa responder a elas. Este tutorial mostrará como usar a versão C++ da classe ParameterEventHandler para monitorar alterações nos parâmetros de um nó, bem como alterações nos parâmetros de outro nó."
 
@@ -191,9 +191,9 @@ Retorno
 [INFO] [1606952588.237531933] [node_with_parameters]: cb2: Received an update to parameter "a_double_param" of type: double: "3.45"
 ```
 
-[Launch Tutorials](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-Main.html)  
+[Launch Tutorials](http://docs.ros.org/en/humble/Tutorials/Launch/Launch-Main.html)  
 
-[Creating a ROS 2 Launch File.](http://docs.ros.org/en/galactic/Tutorials/Launch/Creating-Launch-Files.html) 
+[Creating a ROS 2 Launch File.](http://docs.ros.org/en/humble/Tutorials/Launch/Creating-Launch-Files.html) 
 
 Criando um arquivo de launch para ros2
 
@@ -219,7 +219,7 @@ rqt_graph
 ```  
 
 
-[Launching and Monitor Multiple Nodes with Launch.](http://docs.ros.org/en/galactic/Tutorials/Launch/Launch-system.html) 
+[Launching and Monitor Multiple Nodes with Launch.](http://docs.ros.org/en/humble/Tutorials/Launch/Launch-system.html) 
 
 "O sistema de lançamento no ROS 2 é responsável por ajudar o usuário a descrever a configuração de seu sistema e então executá-lo conforme descrito. A configuração do sistema inclui quais programas executar, onde executá-los, quais argumentos transmiti-los e convenções específicas do ROS que facilitam a reutilização de componentes em todo o sistema, fornecendo a cada um configurações diferentes. Também é responsável por monitorar o estado dos processos iniciados, reportar e/ou reagir a mudanças no estado desses processos."  
 
@@ -234,7 +234,7 @@ launch/my_script.launch.py
 ros2 launch my_package_py my_script.launch.py
 ```
 
-[Using substitutions in launch files](http://docs.ros.org/en/galactic/Tutorials/Launch/Using-Substitutions.html) 
+[Using substitutions in launch files](http://docs.ros.org/en/humble/Tutorials/Launch/Using-Substitutions.html) 
 
 "Os arquivos de inicialização são usados para iniciar nós, serviços e executar processos. Esse conjunto de ações pode ter argumentos, que afetam seu comportamento. As substituições podem ser usadas em argumentos para fornecer mais flexibilidade ao descrever arquivos de inicialização reutilizáveis. As substituições são variáveis que são avaliadas apenas durante a execução da descrição de execução e podem ser usadas para adquirir informações específicas como uma configuração de execução, uma variável de ambiente ou para avaliar uma expressão arbitrária do Python."
 
@@ -253,7 +253,7 @@ Terminal 2
 ros2 launch launch_tutorial example_substitutions.launch.py turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
 ```
 
-[Using Event Handlers.](http://docs.ros.org/en/galactic/Tutorials/Launch/Using-Event-Handlers.html) 
+[Using Event Handlers.](http://docs.ros.org/en/humble/Tutorials/Launch/Using-Event-Handlers.html) 
 
 "Launch in ROS 2 é um sistema que executa e gerencia processos definidos pelo usuário. Ele é responsável por monitorar o estado dos processos que lançou, bem como relatar e reagir às mudanças no estado desses processos. Essas alterações são chamadas de eventos e podem ser tratadas registrando um manipulador de eventos no sistema de inicialização. Os manipuladores de eventos podem ser registrados para eventos específicos e podem ser úteis para monitorar o estado dos processos. Além disso, eles podem ser usados para definir um conjunto complexo de regras que podem ser usadas para modificar dinamicamente o arquivo de inicialização."
 
@@ -292,7 +292,7 @@ Additionally, it will log messages to the console when:
     The launch process is asked to shutdown.
 
 
-[Using ROS 2 Launch For Large Projects.](http://docs.ros.org/en/galactic/Tutorials/Launch/Using-ROS2-Launch-For-Large-Projects.html) 
+[Using ROS 2 Launch For Large Projects.](http://docs.ros.org/en/humble/Tutorials/Launch/Using-ROS2-Launch-For-Large-Projects.html) 
 
 
 "Este tutorial descreve algumas dicas para escrever arquivos de inicialização para projetos grandes. O foco está em como estruturar os arquivos de inicialização para que possam ser reutilizados o máximo possível em diferentes situações. Além disso, abrange exemplos de uso de diferentes ferramentas de inicialização do ROS 2, como parâmetros, arquivos YAML, remapeamentos, namespaces, argumentos padrão e configurações RViz."
@@ -313,20 +313,20 @@ config/turtlesim.yaml
 ros2 launch launch_tutorial launch_turtlesim.launch.py  
 
 * Nescessario instalar pacote
-sudo apt install ros-galactic-turtle-tf2-py
+sudo apt install ros-humble-turtle-tf2-py
 
 
-[tf2 Tutorials](http://docs.ros.org/en/galactic/Tutorials/Tf2/Tf2-Main.html)  
+[tf2 Tutorials](http://docs.ros.org/en/humble/Tutorials/Tf2/Tf2-Main.html)  
 
 - [ ] Learning tf2   
 
-[1. Introduction to tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Introduction-To-Tf2.html)
+[1. Introduction to tf2](http://docs.ros.org/en/humble/Tutorials/Tf2/Introduction-To-Tf2.html)
 
 "Objetivo: Executar uma demonstração do turtlesim e ver um pouco do poder do tf2 em um exemplo multi-robô usando o turtlesim."
 
 Para este tutorial o pacote a seguir deve ser instalado:
 ```sh
-sudo apt-get install ros-galactic-turtle-tf2-py ros-galactic-tf2-tools ros-galactic-tf-transformations
+sudo apt-get install ros-humble-turtle-tf2-py ros-humble-tf2-tools ros-humble-tf-transformations
 ```
 
 ```sh
@@ -350,7 +350,7 @@ ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rvi
 ```
 
 [2. Writing a tf2 static broadcaster]() 
-- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Py.html)
+- [Python](http://docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Py.html)
 
 Pacote utilizado no tutorial
 ```sh
@@ -415,7 +415,7 @@ def generate_launch_description():
    ])
 ```
 
-- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Cpp.html)
+- [C++](http://docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Static-Broadcaster-Cpp.html)
 
 Pacote utilizado no tutorial
 ```sh
@@ -428,7 +428,7 @@ src/static_turtle_tf2_broadcaster.cpp
 
 
 [3. Writing a tf2 broadcaster]()
-- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)  
+- [Python](http://docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)  
 
 "Nos próximos dois tutoriais, escreveremos o código para reproduzir a demonstração do tutorial Introdução ao tf2. Depois disso, os tutoriais a seguir se concentram em estender a demonstração com recursos tf2 mais avançados, incluindo o uso de tempos limite em pesquisas de transformação e viagens no tempo."  
 
@@ -462,7 +462,7 @@ At time 1651597783.967794171
 - Translation: [6.971, 6.643, 0.000]
 - Rotation: in Quaternion [0.000, 0.000, -0.774, 0.633]
 ```
-- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Cpp.html)
+- [C++](http://docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Cpp.html)
     
 Arquivos criados e ou editados no tutorial:
 learning_f2_cpp/src/turtle_tf2_broadcaster.cpp
@@ -502,8 +502,8 @@ At time 1652213518.929866449
 ```
 
 
-[4. Writing a tf2 listener.](docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)
-- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html) 
+[4. Writing a tf2 listener.](docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html)
+- [Python](http://docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Broadcaster-Py.html) 
 
 Arquivos criados no tutorial:
 learning_tf2_py/learning_tf2_py/turtle_tf2_listener.py
@@ -530,7 +530,7 @@ Terminal 2
 ros2 run turtlesim turtle_teleop_key
 ```
 
-- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Writing-A-Tf2-Listener-Cpp.html)
+- [C++](http://docs.ros.org/en/humble/Tutorials/Tf2/Writing-A-Tf2-Listener-Cpp.html)
 
 Arquivos criados no tutorial:
 learning_tf2_cpp/src/turtle_tf2_listener.cpp
@@ -548,7 +548,7 @@ ros2 run turtlesim turtle_teleop_key
 
 
 
-[5. Adding a frame](http://docs.ros.org/en/galactic/Tutorials/Tf2/Adding-A-Frame-Py.html)  
+[5. Adding a frame](http://docs.ros.org/en/humble/Tutorials/Tf2/Adding-A-Frame-Py.html)  
 - Python  
 
 Arquivos criados no tutorial:
@@ -571,7 +571,7 @@ def generate_launch_description():
       )
 ```
 
-- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Adding-A-Frame-Cpp.html)
+- [C++](http://docs.ros.org/en/humble/Tutorials/Tf2/Adding-A-Frame-Cpp.html)
 
 Arquivos criados no tutorial:
 learning_tf2_cpp/learning_tf2_py/fixed_frame_tf2_broadcaster.cpp
@@ -606,7 +606,7 @@ ros2 launch learning_tf2_cpp turtle_tf2_dynamic_frame_demo.launch.py
 
 [6. Learning about tf2 and time]()
 
-- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Learning-About-Tf2-And-Time-Py.html)  
+- [Python](http://docs.ros.org/en/humble/Tutorials/Tf2/Learning-About-Tf2-And-Time-Py.html)  
 
 "Nos tutoriais anteriores, recriamos a demonstração da tartaruga escrevendo um transmissor tf2 e um ouvinte tf2. Também aprendemos como adicionar um novo quadro à árvore de transformação. Agora vamos aprender mais sobre o argumento timeout que faz o lookup_transform esperar pela transformação especificada até a duração especificada antes de lançar uma exceção. Essa ferramenta pode ser útil para ouvir transformações publicadas em taxas variadas ou fontes de entrada com rede não confiável e latência não desprezível. Este tutorial ensinará como usar o timeout na função lookup_transform para esperar que uma transformação esteja disponível na árvore tf2"
 
@@ -631,7 +631,7 @@ ros2 run turtlesim turtle_teleop_key
 
 A tartatura 2 tera a posição da tartaruga 1 um segundo atrás como referencia de posicionamentos. 
 
-- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Learning-About-Tf2-And-Time-Cpp.html)
+- [C++](http://docs.ros.org/en/humble/Tutorials/Tf2/Learning-About-Tf2-And-Time-Cpp.html)
 
 Arquivos editados no tutorial:
 src/learning_tf2_cpp/learning_tf2_cpp/turtle_tf2_listener.cpp
@@ -651,7 +651,7 @@ ros2 run turtlesim turtle_teleop_key
 
 
 [7. Time travel with tf2.]()
-- [Python](http://docs.ros.org/en/galactic/Tutorials/Tf2/Time-Travel-With-Tf2-Py.html)  
+- [Python](http://docs.ros.org/en/humble/Tutorials/Tf2/Time-Travel-With-Tf2-Py.html)  
 
 "No tutorial anterior, discutimos os conceitos básicos de tf2 e tempo. Este tutorial nos levará um passo adiante e exporá um poderoso truque do tf2: a viagem no tempo. Em suma, uma das principais características da biblioteca tf2 é que ela é capaz de transformar dados no tempo e no espaço.
 
@@ -671,7 +671,7 @@ Terminal 2
 ros2 run turtlesim turtle_teleop_key
 ```
 
-- [C++](http://docs.ros.org/en/galactic/Tutorials/Tf2/Time-Travel-With-Tf2-Cpp.html)
+- [C++](http://docs.ros.org/en/humble/Tutorials/Tf2/Time-Travel-With-Tf2-Cpp.html)
 
 Arquivos editados no tutorial:
 src/learning_tf2_cpp/learning_tf2_cpp/turtle_tf2_listener.cpp
@@ -687,16 +687,16 @@ Terminal 2
 ros2 run turtlesim turtle_teleop_key
 ```
 
-[Debugging tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Debugging-Tf2-Problems.html)
+[Debugging tf2](http://docs.ros.org/en/humble/Tutorials/Tf2/Debugging-Tf2-Problems.html)
 
-- [Quaternion fundamentals.](http://docs.ros.org/en/galactic/Tutorials/Tf2/Quaternion-Fundamentals.html)
+- [Quaternion fundamentals.](http://docs.ros.org/en/humble/Tutorials/Tf2/Quaternion-Fundamentals.html)
 
 
 "Um quaternion é uma representação de orientação de 4 tuplas(tradução errada, provavelmente tratase de tupla de 4 posições), que é mais concisa do que uma matriz de rotação. Os quatérnions são muito eficientes para analisar situações em que estão envolvidas rotações em três dimensões. Quaternions são amplamente utilizados em robótica, mecânica quântica, visão computacional e animação 3D."
 
 Instalando tf_transformations
 ```
-sudo apt-get install ros-galactic-tf-transformations
+sudo apt-get install ros-humble-tf-transformations
 ```
 
 Codigo da biblioteca [tf_transformations](https://github.com/DLu/tf_transformations).
@@ -711,7 +711,7 @@ Referêsncias externas
 
 
 
-- [Debugging tf2 problems.](http://docs.ros.org/en/galactic/Tutorials/Tf2/Debugging-Tf2-Problems.html)
+- [Debugging tf2 problems.](http://docs.ros.org/en/humble/Tutorials/Tf2/Debugging-Tf2-Problems.html)
 
 
 
@@ -725,6 +725,6 @@ std::string toFrameRel = "turtle2";
 ```
 
 
-[Using sensor messages with tf2](http://docs.ros.org/en/galactic/Tutorials/Tf2/Using-Stamped-Datatypes-With-Tf2-Ros-MessageFilter.html)
+[Using sensor messages with tf2](http://docs.ros.org/en/humble/Tutorials/Tf2/Using-Stamped-Datatypes-With-Tf2-Ros-MessageFilter.html)
 
 [URDF Tutorials]()  

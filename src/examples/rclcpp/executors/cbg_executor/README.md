@@ -1,6 +1,6 @@
 # examples_rclcpp_cbg_executor
 
-The *examples_rclcpp_cbg_executor* package provides a demo and test bench for the *Callback-group-level Executor* concept. This concept was developed in 2018 and has been integrated in ROS 2 mainline in 2020, i.e., is available from ROS 2 Galactic on. It does not add a new Executor but leverages callback groups for refining the Executor API to callback-group-level granularity.
+The *examples_rclcpp_cbg_executor* package provides a demo and test bench for the *Callback-group-level Executor* concept. This concept was developed in 2018 and has been integrated in ROS 2 mainline in 2020, i.e., is available from ROS 2 humble on. It does not add a new Executor but leverages callback groups for refining the Executor API to callback-group-level granularity.
 
 This allows a single node to have callbacks with different real-time requirements assigned to different Executor instances – within one process. Thus, an Executor instance can be dedicated to one or few specific callback groups and the Executor’s thread (or threads) can be prioritized according to the real-time requirements of these groups. For example, all critical callbacks may be handled by an Executor instance based on an thread running at the highest scheduler priority.
 

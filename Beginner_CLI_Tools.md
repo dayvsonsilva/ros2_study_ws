@@ -2,18 +2,18 @@
 # Anotações - Beginner: CLI Tools
 
 - [Configuring your ROS 2 environment
-](http://docs.ros.org/en/galactic/Tutorials/Configuring-ROS2-Environment.html)
+](http://docs.ros.org/en/humble/Tutorials/Configuring-ROS2-Environment.html)
 
 Escolher ambiente para execução
 ``` shell
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 # ou
 source devel/setup.bash
 ```
 
 Configurar source padrão
 ``` shell
-echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 ```
 
 Setar uma variavel de ambiente
@@ -22,13 +22,13 @@ export ROS_DOMAIN_ID=<your_domain_id>
 echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bashrc
 ```
 
-[Introducing turtlesim and rqt](http://docs.ros.org/en/galactic/Tutorials/Turtlesim/Introducing-Turtlesim.html)  
+[Introducing turtlesim and rqt](http://docs.ros.org/en/humble/Tutorials/Turtlesim/Introducing-Turtlesim.html)  
 
 Instalar pacote turtlesim  
 
 ``` shell 
 sudo apt update
-sudo apt install ros-galactic-turtlesim
+sudo apt install ros-humble-turtlesim
 ``` 
 
 Verificar executaveis do pacote turtlesim
@@ -59,7 +59,7 @@ Instalar rqt
 ``` shell
 sudo apt update
 
-sudo apt install ~nros-galactic-rqt*
+sudo apt install ~nros-humble-rqt*
 ```
 
 Remapear nodes(Pesquisar mais sobre remaping)
@@ -69,13 +69,13 @@ ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2
 
 ```
 
-Repositorio Turtlesim (/ros_tutorials/tree/galactic-devel/turtlesim)
+Repositorio Turtlesim (/ros_tutorials/tree/humble-devel/turtlesim)
  
 ``` shell
 git clone https://github.com/ros/ros_tutorials.git 
 ```
 
-[Understanding ROS 2 nodes](http://docs.ros.org.ros.informatik.uni-freiburg.de/en/galactic/Tutorials/Understanding-ROS2-Nodes.html#ros2-node-list)
+[Understanding ROS 2 nodes](http://docs.ros.org.ros.informatik.uni-freiburg.de/en/humble/Tutorials/Understanding-ROS2-Nodes.html#ros2-node-list)
 
 
 "Cada node no ROS deve ser responsável por um único propósito de módulo (por exemplo, um node para controlar os motores das rodas, um node para controlar um telêmetro a laser, etc). Cada node pode enviar e receber dados para outros nodes por meio de topics, services, actions, ou parameters."
@@ -99,7 +99,7 @@ ros2 node info /my_turtle
 
 
 
-[Understanding ROS 2 topics](http://docs.ros.org/en/galactic/Tutorials/Topics/Understanding-ROS2-Topics.html)
+[Understanding ROS 2 topics](http://docs.ros.org/en/humble/Tutorials/Topics/Understanding-ROS2-Topics.html)
 
 
 ``` shell
@@ -151,7 +151,7 @@ Para monitorar a frequencia em que um topico esta sendo publicado na rede.
 ros2 topic hz /turtle1/pose
 ```
 
-[Understanding ROS 2 services](http://docs.ros.org/en/galactic/Tutorials/Services/Understanding-ROS2-Services.html)
+[Understanding ROS 2 services](http://docs.ros.org/en/humble/Tutorials/Services/Understanding-ROS2-Services.html)
 
 
 Services são outro método de comunicação para nodes no ROS graph. Os serviços são baseados em um modelo call-and-response, versus o modelo de topics’ publisher-subscriber. Enquanto os topics permitem que os nós assinem fluxos de dados e obtenham atualizações contínuas, os serviços só fornecem dados quando são especificamente chamados por um cliente. 
@@ -194,7 +194,7 @@ ros2 service call /clear std_srvs/srv/Empty
 ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
 ```
 
-[Understanding ROS 2 parameters](http://docs.ros.org/en/galactic/Tutorials/Parameters/Understanding-ROS2-Parameters.html)
+[Understanding ROS 2 parameters](http://docs.ros.org/en/humble/Tutorials/Parameters/Understanding-ROS2-Parameters.html)
 
 Um parameter é um valor de configuração de um node. Você pode pensar em parameter como configurações de node. Um node pode armazenar parâmetros como inteiros, floats, booleanos, strings e listas. No ROS 2, cada nó mantém seus próprios parâmetros. Para obter mais informações sobre os parâmetros, consulte o documento conceitual. 
 
@@ -272,7 +272,7 @@ Ex
 ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml
 ```
 
-[Understanding ROS 2 actions](http://docs.ros.org/en/galactic/Tutorials/Understanding-ROS2-Actions.html)
+[Understanding ROS 2 actions](http://docs.ros.org/en/humble/Tutorials/Understanding-ROS2-Actions.html)
 
 "As ações são um dos tipos de comunicação no ROS 2 e destinam-se a tarefas de longa duração. Eles consistem em três partes: um objetivo, feedback e um resultado.  
 
@@ -421,7 +421,7 @@ Goal finished with status: SUCCEEDED]
 ```
 
 
-[Using rqt_console](http://docs.ros.org/en/galactic/Tutorials/Rqt-Console/Using-Rqt-Console.html)
+[Using rqt_console](http://docs.ros.org/en/humble/Tutorials/Rqt-Console/Using-Rqt-Console.html)
 
 "rqt_console é uma ferramenta GUI usada para introspectar mensagens de log no ROS 2. Normalmente, as mensagens de log aparecem em seu terminal. Com o rqt_console, você pode coletar essas mensagens ao longo do tempo, visualizá-las de perto e de forma mais organizada, filtrá-las, salvá-las e até recarregar os arquivos salvos para introspecção em um momento diferente."
 
@@ -457,7 +457,7 @@ ros2 run turtlesim turtlesim_node --ros-args --log-level WARN
 ```
 
 
-[Introducing ROS 2 launch](http://docs.ros.org/en/galactic/Tutorials/Launch/CLI-Intro.html)
+[Introducing ROS 2 launch](http://docs.ros.org/en/humble/Tutorials/Launch/CLI-Intro.html)
 
 "Os arquivos de inicialização permitem que você inicie e configure vários executáveis contendo nós ROS 2 simultaneamente."
 
@@ -486,15 +486,15 @@ def generate_launch_description():
 Esse tutorial é introdutorio, na seção Intermediate o tema sera abordado com mais detalhes.
 
 
-[Recording and playing back data](http://docs.ros.org/en/galactic/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.html)
+[Recording and playing back data](http://docs.ros.org/en/humble/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.html)
 
 "ros2 bag é uma ferramenta de linha de comando para gravar dados publicados em tópicos em seu sistema. Ele acumula os dados passados em qualquer número de tópicos e os salva em um banco de dados. Você pode então reproduzir os dados para reproduzir os resultados de seus testes e experimentos. Gravar tópicos também é uma ótima maneira de compartilhar seu trabalho e permitir que outras pessoas o recriem."
 
 
 Instalar ros2 bag
 ```
-sudo apt-get install ros-galactic-ros2bag \
-                     ros-galactic-rosbag2-storage-default-plugins
+sudo apt-get install ros-humble-ros2bag \
+                     ros-humble-rosbag2-storage-default-plugins
 ```
 
 Sintax ros2 bag

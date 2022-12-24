@@ -1,6 +1,6 @@
 # Anotações - Beginner: Client Libraries
 
-- [Creating a workspace](http://docs.ros.org/en/galactic/Tutorials/Workspace/Creating-A-Workspace.html)
+- [Creating a workspace](http://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html)
   
 <div style="text-align: justify"> 
 "Um espaço de trabalho é um diretório que contém pacotes do ROS 2. Antes de usar o ROS 2, é necessário fornecer seu espaço de trabalho de instalação do ROS 2 no terminal em que você planeja trabalhar. Isso torna os pacotes do ROS 2 disponíveis para você usar nesse terminal.
@@ -10,7 +10,7 @@ Você também tem a opção de fornecer um “overlay” – um espaço de traba
 
 Para cada novo terminal aberto deve ser definido o ambiente de execução
 ``` shell
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 ```
 
 ``` shell
@@ -24,14 +24,14 @@ Como referencia será utilizado o repositorio ros_tutorials.
 
 ``` shell
 cd ros2_study_ws/src
-git clone https://github.com/ros/ros_tutorials.git -b galactic-devel
+git clone https://github.com/ros/ros_tutorials.git -b humble-devel
 ```
 
 Instalando depedencias
 ``` shell
 # cd if you're still in the ``src`` directory with the ``ros_tutorials`` clone
 cd ..
-rosdep install -i --from-path src --rosdistro galactic -y
+rosdep install -i --from-path src --rosdistro humble -y
 ```
 <div style="text-align: justify"> 
 "Os pacotes declaram suas dependências no arquivo package.xml (você aprenderá mais sobre pacotes no próximo tutorial). Este comando percorre essas declarações e instala as que estão faltando. Você pode aprender mais sobre o rosdep em outro tutorial (em breve)."
@@ -39,7 +39,7 @@ rosdep install -i --from-path src --rosdistro galactic -y
 
 Build workspace
 ``` shell
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 cd ros2_study_ws
 colcon build
 ```
@@ -56,7 +56,7 @@ Outros argumentos úteis para a compilação do colcon:
 
 Source o ambiente de rabalho(overlay)
 ``` shell
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 cd ~/ros2_study_ws
 . install/local_setup.bash
 ```
@@ -77,7 +77,7 @@ cd ~/ros2_study_ws
 source install/setup.bash
 ```
 
-- [Creating your first ROS 2 package](http://docs.ros.org/en/galactic/Tutorials/Creating-Your-First-ROS2-Package.html)
+- [Creating your first ROS 2 package](http://docs.ros.org/en/humble/Tutorials/Creating-Your-First-ROS2-Package.html)
 
 <div style="text-align: justify"> 
 "1 O que é um pacote ROS 2?
@@ -182,7 +182,7 @@ ros2 run my_package_python my_node
 ```
 
 
-[Writing a simple publisher and subscriber (C++)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html)
+[Writing a simple publisher and subscriber (C++)](http://docs.ros.org/en/humble/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html)
 
 Criando pacote ROS2 com cpp
 ``` shell
@@ -238,7 +238,7 @@ install(TARGETS
 
 Após a criação e edição dos arquivos realise a instalação das dependencias.
 ```
-rosdep install -i --from-path src --rosdistro galactic -y
+rosdep install -i --from-path src --rosdistro humble -y
 ```
 Compile o pacote
 ```
@@ -276,7 +276,7 @@ Retorno:
 ```
 
 
-[Writing a simple publisher and subscriber (Python)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
+[Writing a simple publisher and subscriber (Python)](http://docs.ros.org/en/humble/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
 
 
 Criando pacote ROS2 com Python
@@ -320,7 +320,7 @@ entry_points={
         ],
 },
 ```
-[Writing a simple service and client (C++)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Cpp-Service-And-Client.html)
+[Writing a simple service and client (C++)](http://docs.ros.org/en/humble/Tutorials/Writing-A-Simple-Cpp-Service-And-Client.html)
 
 
 <div style="text-align: justify"> >
@@ -351,7 +351,7 @@ Retorno:
 ```
 
 
-[Writing a simple service and client (Python)](http://docs.ros.org/en/galactic/Tutorials/Writing-A-Simple-Py-Service-And-Client.html) 
+[Writing a simple service and client (Python)](http://docs.ros.org/en/humble/Tutorials/Writing-A-Simple-Py-Service-And-Client.html) 
 
 
 Criando um pacote
@@ -382,7 +382,7 @@ O cliente passa os dados "2 e 3" para o server que retorna o resultado da soma "
 
 VERIFICAR SE É POSSIVEL UTILIZAR UM SRV DE UM PACOTE PYTHON AMENT_PYTHON.
 
-[Creating custom ROS 2 msg and srv files](http://docs.ros.org/en/galactic/Tutorials/Custom-ROS2-Interfaces.html)  
+[Creating custom ROS 2 msg and srv files](http://docs.ros.org/en/humble/Tutorials/Custom-ROS2-Interfaces.html)  
   
   Etapa 1
   
@@ -452,7 +452,7 @@ int64 sum
   add_two_ints_client2.py
 
 
-[Expanding on ROS 2 interfaces](http://docs.ros.org/en/galactic/Tutorials/Single-Package-Define-And-Use-Interface.html) 
+[Expanding on ROS 2 interfaces](http://docs.ros.org/en/humble/Tutorials/Single-Package-Define-And-Use-Interface.html) 
 
 
 Para este tutorial foi criado o pacote more_interfaces:
@@ -482,7 +482,7 @@ publish_address_book.cpp(fornecido no tutorial)
 subscriber_address_book.cpp(criado como foi sugerido no tutorial)
 
 
-[Using parameters in a class (C++)](http://docs.ros.org/en/galactic/Tutorials/Using-Parameters-In-A-Class-CPP.html) 
+[Using parameters in a class (C++)](http://docs.ros.org/en/humble/Tutorials/Using-Parameters-In-A-Class-CPP.html) 
 
 
 Neste turorial é abordado a utilização de parametros a partir de arquivos launch.
@@ -497,7 +497,7 @@ Foram realizados alterações nos arquivos package.xml e CMakeLists.txt.
 Foram criados dois arquivos, um chamado cpp_parameters_node.cpp e cpp_parameters_launch.py, o primeiro cria um nó que carrega parametro defaul "world" e o launch carrega o executavel "cpp_parameters" porem seta como parametro  "earth".
 
 
-[Using parameters in a class (Python)](http://docs.ros.org/en/galactic/Tutorials/Using-Parameters-In-A-Class-Python.html)  
+[Using parameters in a class (Python)](http://docs.ros.org/en/humble/Tutorials/Using-Parameters-In-A-Class-Python.html)  
 
 Neste turorial é abordado a utilização de parametros a partir de arquivos launch utilizando um pacote ament_python.
 
@@ -511,7 +511,7 @@ Foram realizados alterações nos arquivos package.xml e setup.py.
 Foram criados dois arquivos, python_parameters_node.py  e launch/python_parameters_launch.py, o laquivo launch fou utilizado para aterar o parametro 
 ainda no carregamento do nó.
 
-[Getting started with ros2doctor](http://docs.ros.org/en/galactic/Tutorials/Getting-Started-With-Ros2doctor.html)  
+[Getting started with ros2doctor](http://docs.ros.org/en/humble/Tutorials/Getting-Started-With-Ros2doctor.html)  
 
 
 "O ros2doctor verifica todos os aspectos do ROS 2, incluindo plataforma, versão, rede, ambiente, sistemas em execução e muito mais, e avisa sobre possíveis erros e motivos para problemas."
@@ -547,7 +547,7 @@ TOPIC LIST
 
 ```
 
-[Creating and Using Plugins (C++)](http://docs.ros.org/en/galactic/Tutorials/Pluginlib.html)  
+[Creating and Using Plugins (C++)](http://docs.ros.org/en/humble/Tutorials/Pluginlib.html)  
 
 "pluginlib é uma biblioteca C++ para carregar e descarregar plugins de dentro de um pacote ROS. Plugins são classes carregáveis dinamicamente que são carregadas de uma biblioteca de tempo de execução (ou seja, objeto compartilhado, biblioteca vinculada dinamicamente). Com pluginlib, não é necessário vincular explicitamente seu aplicativo à biblioteca que contém as classes – em vez disso, o pluginlib pode abrir uma biblioteca contendo classes exportadas a qualquer momento sem que o aplicativo tenha conhecimento prévio da biblioteca ou do arquivo de cabeçalho que contém a definição da classe. Os plug-ins são úteis para estender/modificar o comportamento do aplicativo sem precisar do código-fonte do aplicativo.
 "

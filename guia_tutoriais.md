@@ -1,4 +1,4 @@
-[Beginner: CLI Tools](http://docs.ros.org/en/galactic/Tutorials.html#beginner-cli-tools)
+[Beginner: CLI Tools](http://docs.ros.org/en/humble/Tutorials.html#beginner-cli-tools)
 
 - [ ] Configuring your ROS 2 environment  
 - [ ] Introducing turtlesim and rqt  
@@ -12,7 +12,7 @@
 - [ ] Recording and playing back data  
 
 
-[Beginner: Client Libraries](http://docs.ros.org/en/galactic/Tutorials.html#beginner-client-libraries) 
+[Beginner: Client Libraries](http://docs.ros.org/en/humble/Tutorials.html#beginner-client-libraries) 
 
 - [ ] Creating a workspace  
 - [ ] Creating your first ROS 2 package  
@@ -28,7 +28,7 @@
 - [ ] Creating and Using Plugins (C++)  
 
 
-[Intermediate](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
+[Intermediate](http://docs.ros.org/en/humble/Tutorials.html#intermediate)
 
 - [ ] Creating an action  
 - [ ] Writing an action server and client (C++)  
@@ -41,7 +41,7 @@
 - [ ] URDF Tutorials  
 
 
-[Advanced](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
+[Advanced](http://docs.ros.org/en/humble/Tutorials.html#intermediate)
 
 - [ ] ROS 2 Topic Statistics Tutorial (C++)  
 - [ ] Using Fast DDS Discovery Server as discovery protocol [community-contributed]  
@@ -50,11 +50,11 @@
 - [ ] Recording a bag from your own node (C++)  
 - [ ] Recording a bag from your own node (Python)  
 
-[Simulation](http://docs.ros.org/en/galactic/Tutorials.html#intermediate)
+[Simulation](http://docs.ros.org/en/humble/Tutorials.html#intermediate)
 
 - [ ] Simulation Tutorials  
 
-[Miscellaneous](http://docs.ros.org/en/galactic/Tutorials.html#miscellaneous) 
+[Miscellaneous](http://docs.ros.org/en/humble/Tutorials.html#miscellaneous) 
 
 - [ ] ROS2 on IBM Cloud Kubernetes [community-contributed]  
 - [ ] Eclipse Oxygen with ROS 2 and rviz2 [community-contributed]  
@@ -62,7 +62,7 @@
 - [ ] Building ROS 2 Package with eclipse 2021-06  
 
 
-[Demos](http://docs.ros.org/en/galactic/Tutorials.html#demos)
+[Demos](http://docs.ros.org/en/humble/Tutorials.html#demos)
 
 - [ ] Use quality-of-service settings to handle lossy networks.  
 - [ ] Management of nodes with managed lifecycles.  
@@ -80,6 +80,6 @@
 - [ ] Use DDS-Security.  
 - [ ] Logging and logger configuration.  
 
-[Examples](http://docs.ros.org/en/galactic/Tutorials.html#examples) 
+[Examples](http://docs.ros.org/en/humble/Tutorials.html#examples) 
 
 - [ ] Python and C++ minimal examples.  
