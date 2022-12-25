@@ -4,7 +4,7 @@ package_name = 'examples_rclpy_guard_conditions'
 
 setup(
     name=package_name,
-    version='0.11.2',
+    version='0.15.1',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
@@ -12,8 +12,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Audrow Nash',
-    maintainer_email='audrow@openrobotics.com',
+    maintainer='Aditya Pande, Shane Loretz',
+    maintainer_email='aditya.pande@openrobotics.org, shane@openrobotics.org',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',

@@ -4,7 +4,7 @@ package_name = 'examples_rclpy_minimal_client'
 
 setup(
     name=package_name,
-    version='0.11.2',
+    version='0.15.1',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -15,8 +15,8 @@ setup(
     zip_safe=True,
     author='Mikael Arguedas',
     author_email='mikael@osrfoundation.org',
-    maintainer='Mikael Arguedas',
-    maintainer_email='mikael@osrfoundation.org',
+    maintainer='Aditya Pande, Shane Loretz',
+    maintainer_email='aditya.pande@openrobotics.org, shane@openrobotics.org',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',

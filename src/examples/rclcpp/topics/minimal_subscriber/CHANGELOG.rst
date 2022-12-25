@@ -2,6 +2,32 @@
 Changelog for package examples_rclcpp_minimal_subscriber
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.15.1 (2022-11-07)
+-------------------
+* add ContentFilteredTopic example. (`#341 <https://github.com/ros2/examples/issues/341>`_) (`#342 <https://github.com/ros2/examples/issues/342>`_)
+* Contributors: mergify[bot]
+
+0.15.0 (2022-03-01)
+-------------------
+* Use `const&` signature for read-only sub callbacks (`#337 <https://github.com/ros2/examples/issues/337>`_)
+* Contributors: Abrar Rahman Protyasha
+
+0.14.0 (2022-01-14)
+-------------------
+* Updated maintainers (`#329 <https://github.com/ros2/examples/issues/329>`_)
+* Contributors: Aditya Pande
+
+0.13.0 (2021-10-18)
+-------------------
+* Fix deprecated subscriber callbacks (`#323 <https://github.com/ros2/examples/issues/323>`_)
+* Contributors: Abrar Rahman Protyasha
+
+0.12.0 (2021-08-05)
+-------------------
+* Add wait set examples (`#315 <https://github.com/ros2/examples/issues/315>`_)
+* Add type adaption example (`#300 <https://github.com/ros2/examples/issues/300>`_)
+* Contributors: Audrow Nash, carlossvg
+
 0.11.2 (2021-04-26)
 -------------------
 

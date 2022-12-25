@@ -2,6 +2,25 @@
 Changelog for package examples_rclpy_executors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.15.1 (2022-11-07)
+-------------------
+
+0.15.0 (2022-03-01)
+-------------------
+
+0.14.0 (2022-01-14)
+-------------------
+* Update maintainers to Aditya Pande and Shane Loretz (`#332 <https://github.com/ros2/examples/issues/332>`_)
+* Updated maintainers (`#329 <https://github.com/ros2/examples/issues/329>`_)
+* Update python nodes sigint/sigterm handling (`#330 <https://github.com/ros2/examples/issues/330>`_)
+* Contributors: Aditya Pande, Audrow Nash, Ivan Santiago Paunovic
+
+0.13.0 (2021-10-18)
+-------------------
+
+0.12.0 (2021-08-05)
+-------------------
+
 0.11.2 (2021-04-26)
 -------------------
 * Use underscores instead of dashes in setup.cfg (`#310 <https://github.com/ros2/examples/issues/310>`_)

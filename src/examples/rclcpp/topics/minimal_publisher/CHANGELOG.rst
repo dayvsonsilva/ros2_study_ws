@@ -2,6 +2,28 @@
 Changelog for package examples_rclcpp_minimal_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.15.1 (2022-11-07)
+-------------------
+
+0.15.0 (2022-03-01)
+-------------------
+* Add an example about how to use wait_for_all_acked (`#316 <https://github.com/ros2/examples/issues/316>`_)
+* Contributors: Barry Xu
+
+0.14.0 (2022-01-14)
+-------------------
+* Updated maintainers (`#329 <https://github.com/ros2/examples/issues/329>`_)
+* Contributors: Aditya Pande
+
+0.13.0 (2021-10-18)
+-------------------
+
+0.12.0 (2021-08-05)
+-------------------
+* Add try&catch statement to unique network flow publisher example (`#313 <https://github.com/ros2/examples/issues/313>`_)
+* Add type adaption example (`#300 <https://github.com/ros2/examples/issues/300>`_)
+* Contributors: Audrow Nash, Tomoya Fujita
+
 0.11.2 (2021-04-26)
 -------------------
 

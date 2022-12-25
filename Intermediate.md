@@ -727,4 +727,107 @@ std::string toFrameRel = "turtle2";
 
 [Using sensor messages with tf2](http://docs.ros.org/en/humble/Tutorials/Tf2/Using-Stamped-Datatypes-With-Tf2-Ros-MessageFilter.html)
 
-[URDF Tutorials]()  
+
+
+
+[URDF Tutorials](https://docs.ros.org/en/humble/Tutorials/Intermediate/URDF/URDF-Main.html)  
+
+
+"URDF (Unified Robot Description Format) é um formato de arquivo para especificar a geometria e organização de robôs no ROS."
+
+- [Building a Visual Robot Model with URDF from Scratch](https://docs.ros.org/en/humble/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html)
+
+
+```sh
+ros2 launch urdf_tutorial display.launch.py model:=src/urdf_tutorial/urdf/01-myfirst.urdf
+```
+
+
+colcon build --packages-select urdf_tutorial
+
+
+
+- [Building a Movable Robot Model](https://docs.ros.org/en/humble/Tutorials/Intermediate/URDF/Building-a-Movable-Robot-Model-with-URDF.html)
+
+Para tornar os eixos moveis:
+
+Antes
+```sh
+<joint name="right_front_wheel_joint" type="fixed">
+```
+Depois
+```sh
+<joint name="right_front_wheel_joint" type="continuous">
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+```
+
+Tipos de juntas:
+
+"revolute — uma articulação articulada que gira ao longo do eixo e tem uma faixa limitada especificada pelos limites superior e inferior.
+
+continuous — uma junta articulada contínua que gira em torno do eixo e não tem limites superior e inferior.
+
+prismatic  — uma junta deslizante que desliza ao longo do eixo e tem uma faixa limitada especificada pelos limites superior e inferior.
+
+fixed - isso não é realmente uma articulação porque não pode se mover. Todos os graus de liberdade estão bloqueados. Este tipo de junta não requer <axis>, <calibration>, <dynamics>, <limits> ou <safety_controller>.
+
+floating — esta junta permite movimento para todos os 6 graus de liberdade.
+
+planar — esta junta permite o movimento em um plano perpendicular ao eixo."
+
+
+
+- [Adding Physical and Collision Properties](https://docs.ros.org/en/humble/Tutorials/Intermediate/URDF/Adding-Physical-and-Collision-Properties-to-a-URDF-Model.html)
+
+```xml
+  <inertial>
+    <mass value="10"/>
+    <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
+  </inertial>
+```
+
+"Se não tiver certeza do que colocar, uma matriz com ixx/iyy/izz=1e-3 ou menor geralmente é um padrão razoável para um link de tamanho médio (corresponde a uma caixa de 0,1 m de comprimento de lado com uma massa de 0,6 kg). A matriz identidade é uma escolha particularmente ruim, pois muitas vezes é muito alta (corresponde a uma caixa de 0,1 m de lado com uma massa de 600 kg!)."
+
+
+Contact Coefficients
+
+"Você também pode definir como os links se comportam quando estão em contato um com o outro. Isso é feito com um subelemento da tag de colisão chamado contact_coeficientes. Existem três atributos para especificar:
+
+mu - Coeficiente de atrito
+
+kp - Coeficiente de rigidez
+
+kd - Coeficiente de amortecimento"
+
+
+Joint Dynamics
+
+A forma como a articulação se move é definida pela tag de dinâmica da articulação. Existem dois atributos aqui:
+
+fricção - A fricção estática física. Para juntas prismáticas, as unidades são Newtons. Para juntas giratórias, as unidades são Newton metros.
+
+amortecimento - O valor de amortecimento físico. Para juntas prismáticas, as unidades são Newton segundos por metro. Para juntas rotativas, Newton metro segundos por radiano.
+
+mains informações em [wiki.ros.org](https://wiki.ros.org/urdf/XML/joint)
+
+- [Using Xacro to Clean Up your code](https://docs.ros.org/en/humble/Tutorials/Intermediate/URDF/Using-Xacro-to-Clean-Up-a-URDF-File.html)
+
+Funções disponiveis xacro
+-Constants
+-Simple Math
+-Macros
+
+
+
+
+- [Using URDF with robot_state_publisher](https://docs.ros.org/en/humble/Tutorials/Intermediate/URDF/Using-URDF-with-Robot-State-Publisher.html)
+
+Terminal 1
+```sh
+ros2 launch urdf_tutorial_r2d2 demo.launch.py
+```
+
+Terminal 2
+```sh
+rviz2 -d install/urdf_tutorial_r2d2/share/urdf_tutorial_r2d2/r2d2.rviz
+```

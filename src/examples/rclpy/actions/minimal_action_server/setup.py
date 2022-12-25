@@ -4,7 +4,7 @@ package_name = 'examples_rclpy_minimal_action_server'
 
 setup(
     name=package_name,
-    version='0.11.2',
+    version='0.15.1',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -15,8 +15,8 @@ setup(
     zip_safe=True,
     author='Jacob Perron',
     author_email='jacob@openrobotics.org',
-    maintainer='Shane Loretz',
-    maintainer_email='sloretz@openrobotics.org',
+    maintainer='Aditya Pande, Shane Loretz',
+    maintainer_email='aditya.pande@openrobotics.org, shane@openrobotics.org',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',

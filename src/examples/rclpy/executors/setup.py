@@ -4,7 +4,7 @@ package_name = 'examples_rclpy_executors'
 
 setup(
     name=package_name,
-    version='0.11.2',
+    version='0.15.1',
     packages=['examples_rclpy_executors'],
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
@@ -14,8 +14,8 @@ setup(
     zip_safe=True,
     author='Shane Loretz',
     author_email='sloretz@openrobotics.org',
-    maintainer='Shane Loretz',
-    maintainer_email='sloretz@openrobotics.org',
+    maintainer='Aditya Pande, Shane Loretz',
+    maintainer_email='aditya.pande@openrobotics.org, shane@openrobotics.org',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',

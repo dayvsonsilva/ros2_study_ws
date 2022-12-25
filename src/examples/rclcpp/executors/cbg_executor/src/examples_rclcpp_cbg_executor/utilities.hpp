@@ -15,9 +15,13 @@
 #ifndef EXAMPLES_RCLCPP_CBG_EXECUTOR__UTILITIES_HPP_
 #define EXAMPLES_RCLCPP_CBG_EXECUTOR__UTILITIES_HPP_
 
+#include <cmath>
+
 #include <chrono>
+#include <functional>
 #include <string>
 #include <thread>
+#include <vector>
 
 #ifdef _WIN32  // i.e., Windows platform.
 #include <windows.h>
@@ -109,8 +113,12 @@ bool configure_native_thread(T native_handle, ThreadPriority priority, int cpu_i
   int policy;
   success &= (pthread_getschedparam(native_handle, &policy, &params) == 0);
   if (priority == ThreadPriority::HIGH) {
-    params.sched_priority = sched_get_priority_max(SCHED_FIFO);
+    // Choose a priority value slighly below the middle.
+    params.sched_priority =
+      (sched_get_priority_min(SCHED_FIFO) + sched_get_priority_max(SCHED_FIFO)) / 2 - 1;
   } else {
+    // Choose the lowest priority in SCHED_FIFO. This might still be higher than
+    // the priority of the DDS threads, which are not changed here.
     params.sched_priority = sched_get_priority_min(SCHED_FIFO);
   }
   success &= (pthread_setschedparam(native_handle, SCHED_FIFO, &params) == 0);
@@ -140,8 +148,21 @@ bool configure_native_thread(T native_handle, ThreadPriority priority, int cpu_i
   int policy;
   success &= (pthread_getschedparam(native_handle, &policy, &params) == 0);
   if (priority == ThreadPriority::HIGH) {
-    params.sched_priority = sched_get_priority_max(SCHED_FIFO);
+    // Should be a value of 49 on standard Linux platforms, which is just below
+    // the default priority of 50 for threaded interrupt handling.
+    params.sched_priority =
+      (sched_get_priority_min(SCHED_FIFO) + sched_get_priority_max(SCHED_FIFO)) / 2 - 1;
   } else {
+    // Choose the lowest priority under SCHED_FIFO. This will still be higher than
+    // the priority of the DDS threads, which are not changed here. Normally
+    // the DDS threads will be executed under SCHED_OTHER at nice value 0.
+    // Note that changing the priority below the default user-space priority requires
+    // increasing the nice level. This has not been implemented here for two reasons:
+    // First, the Linux API does not allow to get the Linux-specific thread ID (TID)
+    // for changing the nice value from an arbitrary pthread_t pointer, but only from the
+    // current thread by gettid(). Second, a low prio Executor thread under SCHED_OTHER
+    // would always get 50 ms per second due to RT throttling if not configured
+    // otherwise. This would be difficult to explain in a demo.
     params.sched_priority = sched_get_priority_min(SCHED_FIFO);
   }
   success &= (pthread_setschedparam(native_handle, SCHED_FIFO, &params) == 0);
@@ -228,6 +249,24 @@ inline std::chrono::nanoseconds get_current_thread_time()
 #else  // i.e., Linux platform.
   return get_native_thread_time(pthread_self());
 #endif
+}
+
+/// Calculates the average of the given vector of doubles.
+inline double calc_average(const std::vector<double> & v)
+{
+  double avg = std::accumulate(v.begin(), v.end(), 0.0, std::plus<double>()) / v.size();
+  return avg;
+}
+
+/// Calculates the standard deviation of the given vector of doubles.
+inline double calc_std_deviation(const std::vector<double> & v)
+{
+  double mean = calc_average(v);
+  double sum_squares = 0.0;
+  for (const double d : v) {
+    sum_squares += (d - mean) * (d - mean);
+  }
+  return std::sqrt(sum_squares / v.size());
 }
 
 }  // namespace examples_rclcpp_cbg_executor

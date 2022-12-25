@@ -2,6 +2,28 @@
 Changelog for package examples_rclcpp_cbg_executor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.15.1 (2022-11-07)
+-------------------
+
+0.15.0 (2022-03-01)
+-------------------
+* Improve scheduling configuration of examples_rclcpp_cbg_executor package (`#331 <https://github.com/ros2/examples/issues/331>`_)
+* Added jitter measurement to examples_rclcpp_cbg_executor. (`#328 <https://github.com/ros2/examples/issues/328>`_)
+* Contributors: Ralph Lange
+
+0.14.0 (2022-01-14)
+-------------------
+
+0.13.0 (2021-10-18)
+-------------------
+* Fix deprecated subscriber callbacks (`#323 <https://github.com/ros2/examples/issues/323>`_)
+* Contributors: Abrar Rahman Protyasha
+
+0.12.0 (2021-08-05)
+-------------------
+* Remove use of get_callback_groups(). (`#320 <https://github.com/ros2/examples/issues/320>`_)
+* Contributors: Chris Lalancette
+
 0.11.2 (2021-04-26)
 -------------------
 

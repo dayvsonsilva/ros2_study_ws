@@ -157,12 +157,12 @@ OBS: Para a execução dos tutoriais criar uma pasta/pacote para cada tutorial e
     - [x] Quaternion fundamentals.
     - [ ] Debugging tf2 problems.**REFAZER**
   - [ ] Using sensor messages with tf2 **REFAZER**
-- [ ] [URDF Tutorials](http://docs.ros.org/en/humble/Tutorials/URDF/URDF-Main.html)
-  - [ ] Building a Visual Robot Model with URDF from Scratch
-  - [ ] Building a Movable Robot Model with URDF
-  - [ ] Adding Physical and Collision Properties to a URDF Model
-  - [ ] Using Xacro to Clean Up a URDF File
-  - [ ] Using URDF with robot_state_publisher
+- [x] [URDF Tutorials](http://docs.ros.org/en/humble/Tutorials/URDF/URDF-Main.html)
+  - [x] Building a Visual Robot Model with URDF from Scratch
+  - [x] Building a Movable Robot Model
+  - [x] Adding Physical and Collision Properties
+  - [x] Using Xacro to Clean Up your code
+  - [x] Using URDF with robot_state_publisher
 
 ### Advanced
 [Advanced](http://docs.ros.org/en/humble/Tutorials.html#intermediate) <!--6-->
